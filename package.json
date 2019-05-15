@@ -1,0 +1,32 @@
+{
+  "name": "nav-bar",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon ./server/index.js",
+    "seed": "node ./database/seed.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tormund-and-big-lady/nav-bar-service.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tormund-and-big-lady/nav-bar-service/issues"
+  },
+  "homepage": "https://github.com/tormund-and-big-lady/nav-bar-service#readme",
+  "devDependencies": {
+    "webpack": "^4.31.0",
+    "webpack-cli": "^3.3.2"
+  },
+  "dependencies": {
+    "express": "^4.16.4",
+    "mongoose": "^5.5.8",
+    "path": "^0.12.7",
+    "react": "^16.8.6"
+  }
+}
