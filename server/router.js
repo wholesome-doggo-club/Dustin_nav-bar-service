@@ -5,4 +5,8 @@ router
   .route('/navbar')
   .get(controller.getDepartments)
 
+router
+  .route('/navbar/:_id')
+  .get(controller.getCategories)
+
 module.exports = router;
