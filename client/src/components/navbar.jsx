@@ -1,6 +1,7 @@
 import React from 'react';
 import axios from 'axios';
-import Departments from './Departments'
+import Departments from './Departments';
+import style from './navbar.css';
 
 class Navbar extends React.Component {
   constructor(props) {
@@ -51,12 +52,17 @@ class Navbar extends React.Component {
   render() {
     return (
       <div>
+        <p className={style.alignLeft}>
+          NORDSTROM
+          <span className={style.alignRight}>search-bar sign-in add-cart</span>
+        </p>
         <Departments 
           departments={this.state.departments}
           categories={this.state.categories}
           hover={this.state.hover} 
           handleMouseOver={this.handleMouseOver}
           handleMouseOut={this.handleMouseOut} />
+        breadcrumb / breadcrumb / breadcrumb
       </div>
     )
   }

@@ -1,7 +1,8 @@
 import React from 'react';
+import style from './departmentItem.css'
 
 const DepartmentItem = (props) => (
-  <span onMouseOver={() => props.handleMouseOver(props.index)}>
+  <span className={style.departments} onMouseOver={() => props.handleMouseOver(props.index)}>
     {props.department.name}
     
   </span>
