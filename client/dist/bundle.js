@@ -270,6 +270,17 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var reac
 
 /***/ }),
 
+/***/ "./client/src/components/navbar/subcategories/subcategories.css":
+/*!**********************************************************************!*\
+  !*** ./client/src/components/navbar/subcategories/subcategories.css ***!
+  \**********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("\nvar content = __webpack_require__(/*! !../../../../../node_modules/css-loader/dist/cjs.js?modules=true&localIdentName=[name]__[loader]__[hash:base64:5]!./subcategories.css */ \"./node_modules/css-loader/dist/cjs.js?modules=true&localIdentName=[name]__[loader]__[hash:base64:5]!./client/src/components/navbar/subcategories/subcategories.css\");\n\nif(typeof content === 'string') content = [[module.i, content, '']];\n\nvar transform;\nvar insertInto;\n\n\n\nvar options = {\"hmr\":true}\n\noptions.transform = transform\noptions.insertInto = undefined;\n\nvar update = __webpack_require__(/*! ../../../../../node_modules/style-loader/lib/addStyles.js */ \"./node_modules/style-loader/lib/addStyles.js\")(content, options);\n\nif(content.locals) module.exports = content.locals;\n\nif(false) {}\n\n//# sourceURL=webpack:///./client/src/components/navbar/subcategories/subcategories.css?");
+
+/***/ }),
+
 /***/ "./client/src/components/navbar/subcategories/subcategories.jsx":
 /*!**********************************************************************!*\
   !*** ./client/src/components/navbar/subcategories/subcategories.jsx ***!
@@ -278,7 +289,29 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var reac
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n\n\nvar Subcategories = function Subcategories(props) {\n  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"li\", null, props.subcategory.name);\n};\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (Subcategories);\n\n//# sourceURL=webpack:///./client/src/components/navbar/subcategories/subcategories.jsx?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _subcategories_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./subcategories.css */ \"./client/src/components/navbar/subcategories/subcategories.css\");\n/* harmony import */ var _subcategories_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_subcategories_css__WEBPACK_IMPORTED_MODULE_1__);\n\n\n\nvar Subcategories = function Subcategories(props) {\n  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"li\", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"span\", {\n    className: _subcategories_css__WEBPACK_IMPORTED_MODULE_1___default.a.subcategory\n  }, props.subcategory.name));\n};\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (Subcategories);\n\n//# sourceURL=webpack:///./client/src/components/navbar/subcategories/subcategories.jsx?");
+
+/***/ }),
+
+/***/ "./client/src/fonts/brandon-text-bold.woff2":
+/*!**************************************************!*\
+  !*** ./client/src/fonts/brandon-text-bold.woff2 ***!
+  \**************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("module.exports = __webpack_require__.p + \"e24853eb75b9d77f2c15e4e815f443c2.woff2\";\n\n//# sourceURL=webpack:///./client/src/fonts/brandon-text-bold.woff2?");
+
+/***/ }),
+
+/***/ "./client/src/fonts/brandon-text.woff2":
+/*!*********************************************!*\
+  !*** ./client/src/fonts/brandon-text.woff2 ***!
+  \*********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("module.exports = __webpack_require__.p + \"144558226749807c9a11c797dbc9305f.woff2\";\n\n//# sourceURL=webpack:///./client/src/fonts/brandon-text.woff2?");
 
 /***/ }),
 
@@ -600,7 +633,7 @@ eval("\n\nvar bind = __webpack_require__(/*! ./helpers/bind */ \"./node_modules/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("exports = module.exports = __webpack_require__(/*! ../../../../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\")(false);\n// Imports\nexports.push([module.i, \"@import url(https://fonts.googleapis.com/css?family=Josefin+Sans:300,400&display=swap);\", \"\"]);\n\n// Module\nexports.push([module.i, \".cart__-loader-__1vNAx {\\r\\n  font-family: 'Josefin Sans', sans-serif;\\r\\n  font-weight: 300;\\r\\n  line-height: 1.4;\\r\\n  color: #333;\\r\\n}\\r\\n\\r\\n.cart__-loader-__2rWOz {\\r\\n  fill: none;\\r\\n  stroke: #393939;\\r\\n  stroke-miterlimit: 10;\\r\\n}\\r\\n\\r\\n.cart__-loader-__3MxM0 {\\r\\n  fill: none;\\r\\n  stroke: #393939;\\r\\n  stroke-miterlimit: 10;\\r\\n  stroke-linecap: round;\\r\\n  stroke-linejoin: round;\\r\\n}\\r\\n\\r\\n.cart__-loader-__3mkmF {\\r\\n  \\r\\n}\", \"\"]);\n\n// Exports\nexports.locals = {\n\t\"cart\": \"cart__-loader-__1vNAx\",\n\t\"emptyBag\": \"cart__-loader-__2rWOz\",\n\t\"emptyBag1\": \"cart__-loader-__3MxM0\",\n\t\"bagNumber\": \"cart__-loader-__3mkmF\"\n};\n\n//# sourceURL=webpack:///./client/src/components/navbar/cart/cart.css?./node_modules/css-loader/dist/cjs.js?modules=true&localIdentName=%5Bname%5D__%5Bloader%5D__%5Bhash:base64:5%5D");
+eval("exports = module.exports = __webpack_require__(/*! ../../../../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\")(false);\n// Imports\nvar urlEscape = __webpack_require__(/*! ../../../../../node_modules/css-loader/dist/runtime/url-escape.js */ \"./node_modules/css-loader/dist/runtime/url-escape.js\");\nvar ___CSS_LOADER_URL___0___ = urlEscape(__webpack_require__(/*! ../../../fonts/brandon-text.woff2 */ \"./client/src/fonts/brandon-text.woff2\"));\n\n// Module\nexports.push([module.i, \"@font-face {\\r\\n  font-family: 'Brandon Text';\\r\\n  src: url(\" + ___CSS_LOADER_URL___0___ + \") format('woff2');\\r\\n  font-weight: normal;\\r\\n  font-style: normal;\\r\\n}\\r\\n\\r\\n.cart__-loader-__1vNAx {\\r\\n  font-family: 'Brandon Text';\\r\\n  line-height: 1.4;\\r\\n  color: #333;\\r\\n}\\r\\n\\r\\n.cart__-loader-__2rWOz {\\r\\n  fill: none;\\r\\n  stroke: #393939;\\r\\n  stroke-miterlimit: 10;\\r\\n}\\r\\n\\r\\n.cart__-loader-__3MxM0 {\\r\\n  fill: none;\\r\\n  stroke: #393939;\\r\\n  stroke-miterlimit: 10;\\r\\n  stroke-linecap: round;\\r\\n  stroke-linejoin: round;\\r\\n}\\r\\n\\r\\n.cart__-loader-__3mkmF {\\r\\n  \\r\\n}\", \"\"]);\n\n// Exports\nexports.locals = {\n\t\"cart\": \"cart__-loader-__1vNAx\",\n\t\"emptyBag\": \"cart__-loader-__2rWOz\",\n\t\"emptyBag1\": \"cart__-loader-__3MxM0\",\n\t\"bagNumber\": \"cart__-loader-__3mkmF\"\n};\n\n//# sourceURL=webpack:///./client/src/components/navbar/cart/cart.css?./node_modules/css-loader/dist/cjs.js?modules=true&localIdentName=%5Bname%5D__%5Bloader%5D__%5Bhash:base64:5%5D");
 
 /***/ }),
 
@@ -611,7 +644,7 @@ eval("exports = module.exports = __webpack_require__(/*! ../../../../../node_mod
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("exports = module.exports = __webpack_require__(/*! ../../../../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\")(false);\n// Imports\nexports.push([module.i, \"@import url(https://fonts.googleapis.com/css?family=Josefin+Sans:300,400&display=swap);\", \"\"]);\n\n// Module\nexports.push([module.i, \".categories__-loader-__1eTbN {\\n  margin: auto;\\n  /* display: inline-block; */\\n  font-family: 'Josefin Sans', sans-serif;\\n  font-weight: 400;\\n  line-height: 1.4;\\n  color: #333;\\n}\\n\\n.categories__-loader-__1rnor {\\n  list-style-type: none;\\n  margin: 0;\\n  padding: 0;\\n  font-family: 'Josefin Sans', sans-serif;\\n  font-weight: 300;\\n  line-height: 1.4;\\n  color: #333;\\n}\\n\", \"\"]);\n\n// Exports\nexports.locals = {\n\t\"categories\": \"categories__-loader-__1eTbN\",\n\t\"subcategories\": \"categories__-loader-__1rnor\"\n};\n\n//# sourceURL=webpack:///./client/src/components/navbar/categories/categories.css?./node_modules/css-loader/dist/cjs.js?modules=true&localIdentName=%5Bname%5D__%5Bloader%5D__%5Bhash:base64:5%5D");
+eval("exports = module.exports = __webpack_require__(/*! ../../../../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\")(false);\n// Imports\nvar urlEscape = __webpack_require__(/*! ../../../../../node_modules/css-loader/dist/runtime/url-escape.js */ \"./node_modules/css-loader/dist/runtime/url-escape.js\");\nvar ___CSS_LOADER_URL___0___ = urlEscape(__webpack_require__(/*! ../../../fonts/brandon-text.woff2 */ \"./client/src/fonts/brandon-text.woff2\"));\nvar ___CSS_LOADER_URL___1___ = urlEscape(__webpack_require__(/*! ../../../fonts/brandon-text-bold.woff2 */ \"./client/src/fonts/brandon-text-bold.woff2\"));\n\n// Module\nexports.push([module.i, \"@font-face {\\n  font-family: 'Brandon Text';\\n  src: url(\" + ___CSS_LOADER_URL___0___ + \") format('woff2');\\n  font-style: normal;\\n}\\n\\n@font-face {\\n  font-family: 'Brandon Text Bold';\\n  src: url(\" + ___CSS_LOADER_URL___1___ + \") format('woff2');\\n  font-style: normal;\\n}\\n\\n.categories__-loader-__1eTbN {\\n  margin: auto;\\n  /* display: inline-block; */\\n  font-family: 'Brandon Text Bold';\\n  font-weight: 400;\\n  font-size: 95%;\\n  line-height: 1.4;\\n  color: #333;\\n}\\n\\n.categories__-loader-__1rnor {\\n  list-style-type: none;\\n  margin: 0;\\n  padding: 0;\\n  font-family: 'Brandon Text';\\n  font-weight: 300;\\n  font-size: 90%;\\n  line-height: 1.4;\\n  color: #333;\\n}\\n\\n.categories__-loader-__1rnor li {\\n  margin: 10px 0 10px 0;\\n}\\n\", \"\"]);\n\n// Exports\nexports.locals = {\n\t\"categories\": \"categories__-loader-__1eTbN\",\n\t\"subcategories\": \"categories__-loader-__1rnor\"\n};\n\n//# sourceURL=webpack:///./client/src/components/navbar/categories/categories.css?./node_modules/css-loader/dist/cjs.js?modules=true&localIdentName=%5Bname%5D__%5Bloader%5D__%5Bhash:base64:5%5D");
 
 /***/ }),
 
@@ -622,7 +655,7 @@ eval("exports = module.exports = __webpack_require__(/*! ../../../../../node_mod
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("exports = module.exports = __webpack_require__(/*! ../../../../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\")(false);\n// Imports\nexports.push([module.i, \"@import url(https://fonts.googleapis.com/css?family=Josefin+Sans:300,400&display=swap);\", \"\"]);\n\n// Module\nexports.push([module.i, \".departmentItem__-loader-__X9D3i {\\n  margin: 0 5% 0 0;\\n  display: inline-block;\\n  padding-bottom: .5rem;\\n  position: relative;\\n  font-family: 'Josefin Sans', sans-serif;\\n  font-weight: 300;\\n  line-height: 1.4;\\n  color: #333;\\n}\\n\\n.departmentItem__-loader-__X9D3i:hover {\\n  border-bottom: 2px solid #333;\\n  padding-bottom: 0px;\\n}\", \"\"]);\n\n// Exports\nexports.locals = {\n\t\"departments\": \"departmentItem__-loader-__X9D3i\"\n};\n\n//# sourceURL=webpack:///./client/src/components/navbar/departmentItem/departmentItem.css?./node_modules/css-loader/dist/cjs.js?modules=true&localIdentName=%5Bname%5D__%5Bloader%5D__%5Bhash:base64:5%5D");
+eval("exports = module.exports = __webpack_require__(/*! ../../../../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\")(false);\n// Imports\nvar urlEscape = __webpack_require__(/*! ../../../../../node_modules/css-loader/dist/runtime/url-escape.js */ \"./node_modules/css-loader/dist/runtime/url-escape.js\");\nvar ___CSS_LOADER_URL___0___ = urlEscape(__webpack_require__(/*! ../../../fonts/brandon-text.woff2 */ \"./client/src/fonts/brandon-text.woff2\"));\n\n// Module\nexports.push([module.i, \"@font-face {\\n  font-family: 'Brandon Text';\\n  src: url(\" + ___CSS_LOADER_URL___0___ + \") format('woff2');\\n  font-weight: normal;\\n  font-style: normal;\\n}\\n\\n.departmentItem__-loader-__X9D3i {\\n  margin: 0 5% 45px 0;\\n  display: inline-block;\\n  padding-bottom: .5rem;\\n  position: relative;\\n  font-family: 'Brandon Text';\\n  line-height: 1.4;\\n  color: #333;\\n}\\n\\n.departmentItem__-loader-__X9D3i:hover {\\n  border-bottom: 2px solid #333;\\n  padding-bottom: 0px;\\n}\", \"\"]);\n\n// Exports\nexports.locals = {\n\t\"departments\": \"departmentItem__-loader-__X9D3i\"\n};\n\n//# sourceURL=webpack:///./client/src/components/navbar/departmentItem/departmentItem.css?./node_modules/css-loader/dist/cjs.js?modules=true&localIdentName=%5Bname%5D__%5Bloader%5D__%5Bhash:base64:5%5D");
 
 /***/ }),
 
@@ -633,7 +666,7 @@ eval("exports = module.exports = __webpack_require__(/*! ../../../../../node_mod
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("exports = module.exports = __webpack_require__(/*! ../../../../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\")(false);\n// Module\nexports.push([module.i, \".departments__-loader-__3sqFL {\\n  margin: auto;\\n  /* width: 100%; */\\n  /* text-align: center; */\\n}\\n\\n.departments__-loader-__24faa {\\n  margin: 0 10% 0 5%;\\n  /* width: 86%; */\\n}\", \"\"]);\n\n// Exports\nexports.locals = {\n\t\"center\": \"departments__-loader-__3sqFL\",\n\t\"categoryCenter\": \"departments__-loader-__24faa\"\n};\n\n//# sourceURL=webpack:///./client/src/components/navbar/departments/departments.css?./node_modules/css-loader/dist/cjs.js?modules=true&localIdentName=%5Bname%5D__%5Bloader%5D__%5Bhash:base64:5%5D");
+eval("exports = module.exports = __webpack_require__(/*! ../../../../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\")(false);\n// Module\nexports.push([module.i, \".departments__-loader-__3sqFL {\\n  margin: auto;\\n  /* width: 100%; */\\n  /* text-align: center; */\\n  /* text-align: right; */\\n}\\n\\n.departments__-loader-__24faa {\\n  margin: 0 10% 0 5%;\\n  /* width: 86%; */\\n}\", \"\"]);\n\n// Exports\nexports.locals = {\n\t\"center\": \"departments__-loader-__3sqFL\",\n\t\"categoryCenter\": \"departments__-loader-__24faa\"\n};\n\n//# sourceURL=webpack:///./client/src/components/navbar/departments/departments.css?./node_modules/css-loader/dist/cjs.js?modules=true&localIdentName=%5Bname%5D__%5Bloader%5D__%5Bhash:base64:5%5D");
 
 /***/ }),
 
@@ -644,7 +677,7 @@ eval("exports = module.exports = __webpack_require__(/*! ../../../../../node_mod
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("exports = module.exports = __webpack_require__(/*! ../../../../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\")(false);\n// Imports\nexports.push([module.i, \"@import url(https://fonts.googleapis.com/css?family=Josefin+Sans:300,400&display=swap);\", \"\"]);\n\n// Module\nexports.push([module.i, \".login__-loader-__1YxhT {\\r\\n  font-family: 'Josefin Sans', sans-serif;\\r\\n  font-weight: 300;\\r\\n  line-height: 1.4;\\r\\n  color: #333;\\r\\n}\\r\\n\\r\\n.login__-loader-__25q-6 {\\r\\n  fill: none;\\r\\n  stroke: #737373;\\r\\n  stroke-linecap: round;\\r\\n  stroke-miterlimit: 10;\\r\\n}\", \"\"]);\n\n// Exports\nexports.locals = {\n\t\"login\": \"login__-loader-__1YxhT\",\n\t\"arrowDown\": \"login__-loader-__25q-6\"\n};\n\n//# sourceURL=webpack:///./client/src/components/navbar/login/login.css?./node_modules/css-loader/dist/cjs.js?modules=true&localIdentName=%5Bname%5D__%5Bloader%5D__%5Bhash:base64:5%5D");
+eval("exports = module.exports = __webpack_require__(/*! ../../../../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\")(false);\n// Imports\nvar urlEscape = __webpack_require__(/*! ../../../../../node_modules/css-loader/dist/runtime/url-escape.js */ \"./node_modules/css-loader/dist/runtime/url-escape.js\");\nvar ___CSS_LOADER_URL___0___ = urlEscape(__webpack_require__(/*! ../../../fonts/brandon-text.woff2 */ \"./client/src/fonts/brandon-text.woff2\"));\n\n// Module\nexports.push([module.i, \"@font-face {\\r\\n  font-family: 'Brandon Text';\\r\\n  src: url(\" + ___CSS_LOADER_URL___0___ + \") format('woff2');\\r\\n  font-weight: normal;\\r\\n  font-style: normal;\\r\\n}\\r\\n\\r\\n.login__-loader-__1YxhT {\\r\\n  font-family: 'Brandon Text';\\r\\n  line-height: 1.4;\\r\\n  color: #333;\\r\\n}\\r\\n\\r\\n.login__-loader-__25q-6 {\\r\\n  fill: none;\\r\\n  stroke: #737373;\\r\\n  stroke-linecap: round;\\r\\n  stroke-miterlimit: 10;\\r\\n}\", \"\"]);\n\n// Exports\nexports.locals = {\n\t\"login\": \"login__-loader-__1YxhT\",\n\t\"arrowDown\": \"login__-loader-__25q-6\"\n};\n\n//# sourceURL=webpack:///./client/src/components/navbar/login/login.css?./node_modules/css-loader/dist/cjs.js?modules=true&localIdentName=%5Bname%5D__%5Bloader%5D__%5Bhash:base64:5%5D");
 
 /***/ }),
 
@@ -677,7 +710,18 @@ eval("exports = module.exports = __webpack_require__(/*! ../../../../node_module
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("exports = module.exports = __webpack_require__(/*! ../../../../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\")(false);\n// Imports\nexports.push([module.i, \"@import url(https://fonts.googleapis.com/css?family=Josefin+Sans:300,400&display=swap);\", \"\"]);\n\n// Module\nexports.push([module.i, \".search__-loader-__2HWLd {\\r\\n  font-family: 'Josefin Sans', sans-serif;\\r\\n  font-weight: 300;\\r\\n  line-height: 1.4;\\r\\n  color: #333;\\r\\n}\\r\\n\\r\\n.search__-loader-__29PIS {\\r\\n  fill: none;\\r\\n  stroke: #393939;\\r\\n  stroke-linecap: round;\\r\\n  stroke-linejoin: round;\\r\\n}\", \"\"]);\n\n// Exports\nexports.locals = {\n\t\"search\": \"search__-loader-__2HWLd\",\n\t\"searchIcon\": \"search__-loader-__29PIS\"\n};\n\n//# sourceURL=webpack:///./client/src/components/navbar/search/search.css?./node_modules/css-loader/dist/cjs.js?modules=true&localIdentName=%5Bname%5D__%5Bloader%5D__%5Bhash:base64:5%5D");
+eval("exports = module.exports = __webpack_require__(/*! ../../../../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\")(false);\n// Imports\nvar urlEscape = __webpack_require__(/*! ../../../../../node_modules/css-loader/dist/runtime/url-escape.js */ \"./node_modules/css-loader/dist/runtime/url-escape.js\");\nvar ___CSS_LOADER_URL___0___ = urlEscape(__webpack_require__(/*! ../../../fonts/brandon-text.woff2 */ \"./client/src/fonts/brandon-text.woff2\"));\n\n// Module\nexports.push([module.i, \"@font-face {\\r\\n  font-family: 'Brandon Text';\\r\\n  src: url(\" + ___CSS_LOADER_URL___0___ + \") format('woff2');\\r\\n  font-weight: normal;\\r\\n  font-style: normal;\\r\\n}\\r\\n\\r\\n.search__-loader-__2HWLd {\\r\\n  font-family: 'Brandon Text';\\r\\n  line-height: 1.4;\\r\\n  color: #333;\\r\\n}\\r\\n\\r\\n.search__-loader-__29PIS {\\r\\n  fill: none;\\r\\n  stroke: #393939;\\r\\n  stroke-linecap: round;\\r\\n  stroke-linejoin: round;\\r\\n}\", \"\"]);\n\n// Exports\nexports.locals = {\n\t\"search\": \"search__-loader-__2HWLd\",\n\t\"searchIcon\": \"search__-loader-__29PIS\"\n};\n\n//# sourceURL=webpack:///./client/src/components/navbar/search/search.css?./node_modules/css-loader/dist/cjs.js?modules=true&localIdentName=%5Bname%5D__%5Bloader%5D__%5Bhash:base64:5%5D");
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js?modules=true&localIdentName=[name]__[loader]__[hash:base64:5]!./client/src/components/navbar/subcategories/subcategories.css":
+/*!**************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js?modules=true&localIdentName=[name]__[loader]__[hash:base64:5]!./client/src/components/navbar/subcategories/subcategories.css ***!
+  \**************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("exports = module.exports = __webpack_require__(/*! ../../../../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\")(false);\n// Module\nexports.push([module.i, \".subcategories__-loader-__ALVlI:hover {\\r\\n  border-bottom: 2px solid #333;\\r\\n  padding-bottom: 0px;\\r\\n}\", \"\"]);\n\n// Exports\nexports.locals = {\n\t\"subcategory\": \"subcategories__-loader-__ALVlI\"\n};\n\n//# sourceURL=webpack:///./client/src/components/navbar/subcategories/subcategories.css?./node_modules/css-loader/dist/cjs.js?modules=true&localIdentName=%5Bname%5D__%5Bloader%5D__%5Bhash:base64:5%5D");
 
 /***/ }),
 
@@ -690,6 +734,18 @@ eval("exports = module.exports = __webpack_require__(/*! ../../../../../node_mod
 
 "use strict";
 eval("\n\n/*\n  MIT License http://www.opensource.org/licenses/mit-license.php\n  Author Tobias Koppers @sokra\n*/\n// css base code, injected by the css-loader\nmodule.exports = function (useSourceMap) {\n  var list = []; // return the list of modules as css string\n\n  list.toString = function toString() {\n    return this.map(function (item) {\n      var content = cssWithMappingToString(item, useSourceMap);\n\n      if (item[2]) {\n        return '@media ' + item[2] + '{' + content + '}';\n      } else {\n        return content;\n      }\n    }).join('');\n  }; // import a list of modules into the list\n\n\n  list.i = function (modules, mediaQuery) {\n    if (typeof modules === 'string') {\n      modules = [[null, modules, '']];\n    }\n\n    var alreadyImportedModules = {};\n\n    for (var i = 0; i < this.length; i++) {\n      var id = this[i][0];\n\n      if (id != null) {\n        alreadyImportedModules[id] = true;\n      }\n    }\n\n    for (i = 0; i < modules.length; i++) {\n      var item = modules[i]; // skip already imported module\n      // this implementation is not 100% perfect for weird media query combinations\n      // when a module is imported multiple times with different media queries.\n      // I hope this will never occur (Hey this way we have smaller bundles)\n\n      if (item[0] == null || !alreadyImportedModules[item[0]]) {\n        if (mediaQuery && !item[2]) {\n          item[2] = mediaQuery;\n        } else if (mediaQuery) {\n          item[2] = '(' + item[2] + ') and (' + mediaQuery + ')';\n        }\n\n        list.push(item);\n      }\n    }\n  };\n\n  return list;\n};\n\nfunction cssWithMappingToString(item, useSourceMap) {\n  var content = item[1] || '';\n  var cssMapping = item[3];\n\n  if (!cssMapping) {\n    return content;\n  }\n\n  if (useSourceMap && typeof btoa === 'function') {\n    var sourceMapping = toComment(cssMapping);\n    var sourceURLs = cssMapping.sources.map(function (source) {\n      return '/*# sourceURL=' + cssMapping.sourceRoot + source + ' */';\n    });\n    return [content].concat(sourceURLs).concat([sourceMapping]).join('\\n');\n  }\n\n  return [content].join('\\n');\n} // Adapted from convert-source-map (MIT)\n\n\nfunction toComment(sourceMap) {\n  // eslint-disable-next-line no-undef\n  var base64 = btoa(unescape(encodeURIComponent(JSON.stringify(sourceMap))));\n  var data = 'sourceMappingURL=data:application/json;charset=utf-8;base64,' + base64;\n  return '/*# ' + data + ' */';\n}\n\n//# sourceURL=webpack:///./node_modules/css-loader/dist/runtime/api.js?");
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/runtime/url-escape.js":
+/*!************************************************************!*\
+  !*** ./node_modules/css-loader/dist/runtime/url-escape.js ***!
+  \************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\n\nmodule.exports = function escape(url, needQuotes) {\n  if (typeof url !== 'string') {\n    return url;\n  } // If url is already wrapped in quotes, remove them\n\n\n  if (/^['\"].*['\"]$/.test(url)) {\n    url = url.slice(1, -1);\n  } // Should url be wrapped?\n  // See https://drafts.csswg.org/css-values-3/#urls\n\n\n  if (/[\"'() \\t\\n]/.test(url) || needQuotes) {\n    return '\"' + url.replace(/\"/g, '\\\\\"').replace(/\\n/g, '\\\\n') + '\"';\n  }\n\n  return url;\n};\n\n//# sourceURL=webpack:///./node_modules/css-loader/dist/runtime/url-escape.js?");
 
 /***/ }),
 

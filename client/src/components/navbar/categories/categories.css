@@ -1,11 +1,21 @@
-@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:300,400&display=swap');
+@font-face {
+  font-family: 'Brandon Text';
+  src: url(../../../fonts/brandon-text.woff2) format('woff2');
+  font-style: normal;
+}
 
+@font-face {
+  font-family: 'Brandon Text Bold';
+  src: url(../../../fonts/brandon-text-bold.woff2) format('woff2');
+  font-style: normal;
+}
 
 .categories {
   margin: auto;
   /* display: inline-block; */
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Brandon Text Bold';
   font-weight: 400;
+  font-size: 95%;
   line-height: 1.4;
   color: #333;
 }
@@ -14,8 +24,13 @@
   list-style-type: none;
   margin: 0;
   padding: 0;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Brandon Text';
   font-weight: 300;
+  font-size: 90%;
   line-height: 1.4;
   color: #333;
+}
+
+.subcategories li {
+  margin: 10px 0 10px 0;
 }

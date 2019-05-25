@@ -1,8 +1,11 @@
 import React from 'react';
+import style from './subcategories.css';
 
 const Subcategories = (props) => (
   <li>
-    {props.subcategory.name}
+    <span className={style.subcategory}>
+      {props.subcategory.name}
+    </span>
   </li>
 )
 
