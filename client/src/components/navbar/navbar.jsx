@@ -1,6 +1,10 @@
 import React from 'react';
 import axios from 'axios';
-import Departments from './Departments';
+import Logo from './logo/logo';
+import Search from './search/search';
+import Login from './login/login';
+import Cart from './cart/cart';
+import Departments from './departments/departments';
 import style from './navbar.css';
 
 class Navbar extends React.Component {
@@ -51,18 +55,30 @@ class Navbar extends React.Component {
 
   render() {
     return (
-      <div>
-        <p className={style.alignLeft}>
-          NORDSTROM
-          <span className={style.alignRight}>search-bar sign-in add-cart</span>
-        </p>
+      <div className={style.navbar}>
+        <div>
+          <p className={style.alignLeft}>
+            <Logo />
+              <div className={style.alignRight}>
+                <span className={style.rightNav}>
+                  <Search /> 
+                </span>
+                <span className={style.rightNav}>
+                  <Login /> 
+                </span>
+                <span className={style.rightNav}>
+                  <Cart />
+                </span>
+              </div>
+          </p>
+        </div>
         <Departments 
           departments={this.state.departments}
           categories={this.state.categories}
           hover={this.state.hover} 
           handleMouseOver={this.handleMouseOver}
           handleMouseOut={this.handleMouseOut} />
-        breadcrumb / breadcrumb / breadcrumb
+        {/* breadcrumb / breadcrumb / breadcrumb */}
       </div>
     )
   }

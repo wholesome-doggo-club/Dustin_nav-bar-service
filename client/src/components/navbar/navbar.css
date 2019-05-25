@@ -1,0 +1,15 @@
+.alignLeft {
+  text-align: left;
+}
+
+.alignRight {
+  float: right;
+}
+
+.navbar {
+  margin: 0 5% 0 5%;
+}
+
+.rightNav {
+  margin: 0 0 0 10px;
+}

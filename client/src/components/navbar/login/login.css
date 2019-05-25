@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:300,400&display=swap');
+
+.login {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 300;
+  line-height: 1.4;
+  color: #333;
+}
+
+.arrowDown {
+  fill: none;
+  stroke: #737373;
+  stroke-linecap: round;
+  stroke-miterlimit: 10;
+}
