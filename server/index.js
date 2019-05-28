@@ -17,5 +17,5 @@ app.use('/api', router)
 app.use(express.static(path.resolve(__dirname, '../client/dist')));
 
 // establish port to listen on
-let port = 3501;
+let port = 3000;
 app.listen(port, () => `Navbar-server is listening on port ${port}`);

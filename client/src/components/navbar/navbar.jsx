@@ -57,7 +57,7 @@ class Navbar extends React.Component {
     return (
       <div className={style.navbar}>
         <div >
-          <span className={style.alignLeft}>
+          <p className={style.alignLeft}>
             <Logo />
               <div className={style.alignRight}>
                 <span className={style.rightNav}>
@@ -70,9 +70,9 @@ class Navbar extends React.Component {
                   <Cart />
                 </span>
               </div>
-          </span>
+          </p>
         </div>
-        <br />
+        {/* <br /> */}
         <Departments 
           departments={this.state.departments}
           categories={this.state.categories}

@@ -37,7 +37,7 @@ class Search extends React.Component {
           this.state.hover ? 
           <div className={style.searchBoxDiv}>
             <form className={style.searchBoxForm}>
-              <input type="text" />
+              <input type="text" value="What can we help you find?" />
             </form> 
           </div>
           : '' 
