@@ -13,12 +13,12 @@ const Departments = (props) => (
             department={department}
             total={props.departments.length}
             hover={props.hover}
-            handleMouseOver={props.handleMouseOver}
+            getCategories={props.getCategories}
             handleMouseOut={props.handleMouseOut} />)}
 
     </div>
     <div className={style.categoryCenter}>
-      {props.hover ? props.categories.map((category, index) => <Categories key={index} category={category} total={props.categories.length} />) : ''}
+      {props.categories.map((category, index) => <Categories key={index} category={category} total={props.categories.length} />)}
     </div>
 
   </nav>

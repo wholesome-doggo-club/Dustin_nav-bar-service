@@ -1,6 +1,8 @@
 const mongoose = require('mongoose');
 require('./index.js'); // connecting DB: index.js -> models.js
 
+/* Navbar menu items */
+
 const subcategorySchema = new mongoose.Schema({
   name: String
 });
@@ -17,14 +19,15 @@ const departmentSchema = new mongoose.Schema({
 
 const Department = mongoose.model('departments', departmentSchema);
 
+/* Search items */
 
-// const Category = mongoose.model('categories', categorySchema);
+const searchSchema = new mongoose.Schema({
+  name: String
+})
 
-
-// const Subcategory = mongoose.model('subcategories', subcategorySchema);
+const Search = mongoose.model('searches', searchSchema)
 
 module.exports = {
-  Department
-  // Category,
-  // Subcategory
+  Department,
+  Search
 }

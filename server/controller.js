@@ -16,5 +16,14 @@ module.exports = {
     helper.getCategories(_id)
       .then(data => res.status(200).send(data))
       .catch(err => res.status(404).send(err))
+  },
+
+  getSearchResults: (req, res) => {
+    const { term } = req.params
+
+    helper.getSearchResults(term)
+      .limit(5)
+      .then(data => res.status(200).send(data))
+      .catch(err => res.status(404).send(err))
   }
 }

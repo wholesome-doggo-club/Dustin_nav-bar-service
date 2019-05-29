@@ -9,4 +9,8 @@ router
   .route('/navbar/:_id')
   .get(controller.getCategories)
 
+router
+  .route('/search/:term')
+  .get(controller.getSearchResults)
+
 module.exports = router;

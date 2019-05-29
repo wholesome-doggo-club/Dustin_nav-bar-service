@@ -1,26 +1,21 @@
-// const category = require('../data/category.json');
-const data = require('../data/data.json');
-// const subcategory = require('../data/subcategory.json');
+const items = require('../data/items.json');
+const search = require('../data/search.json');
+
 
 const models = require('./models.js');
 /*
   Department,
-  Category,
-  Subcategory
+  Search
 */
 
 const seed = () => {
-  models.Department.create(data)
-    .then(() => 'Seeded data to Department document. Please verify that data has been seeded.')
-    .catch(() => 'Error seeding data to Department document.')
+  // models.Department.create(items)
+  //   .then(() => 'Seeded items to Department document. Please verify that items has been seeded.')
+  //   .catch(() => 'Error seeding items to Department document.')
 
-  // models.Category.create(category)
-  //   .then(() => 'Seeded data to Category document. Please verify that data has been seeded.')
-  //   .catch(() => 'Error seeding data to Category document.')
-
-  // models.Subcategory.create(subcategory)
-  //   .then(() => 'Seeded data to Subcategory document. Please verify that data has been seeded.')
-  //   .catch(() => 'Error seeding data to Subcategory document.')
+    models.Search.create(search)
+    .then(() => 'Seeded search results to Search document. Please verify that search results has been seeded.')
+    .catch(() => 'Error seeding search results to Search document.')
 }
 
 // invoke seed via npm script
