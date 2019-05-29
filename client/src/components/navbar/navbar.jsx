@@ -18,7 +18,9 @@ class Navbar extends React.Component {
       departments: [],
       categories: [],
       subcategories: [],
-      hover: false
+      searchHover: false,
+      accountHover: false,
+      cartHover: false
     }
 
     this.handleMouseOver = this.handleMouseOver.bind(this);
@@ -32,12 +34,20 @@ class Navbar extends React.Component {
     this.retrieveData();
   }
 
-  handleMouseOver() {
-    this.setState({ hover: true }, () => console.log('mouse over', this.state.hover))
+  handleMouseOver(stateName) {
+    this.setState({ [stateName]: true })
   }
 
-  handleMouseOut() {
-    this.setState({ hover: false }, () => console.log('moused out', this.state.hover))
+  handleMouseOut(stateName) {
+    if (stateName === 'nav') {
+      this.setState({
+        categories: [],
+        subcategories: []
+      })
+    } else {
+      this.setState({ [stateName]: false }, () => console.log('moused out', this.state.stateName))
+    }
+
   }
 
   retrieveData() {
@@ -52,7 +62,7 @@ class Navbar extends React.Component {
       this.setState({ search: e.target.value }, () => 
         axios
           .get(`/api/search/${this.state.search}`)
-          .then(({ data }) => this.setState({ results: data }, () => console.log(this.state.results)))
+          .then(({ data }) => this.setState({ results: data }))
           .catch(err => console.log(err)))
     } else {
       this.setState({
@@ -68,55 +78,69 @@ class Navbar extends React.Component {
 
   render() {
     return (
-      <div>
-        
-        <div className={style.navbar}>
-          <div className={style.topComp}>
-            <div className={style.alignLeft}>
-              <Logo />
-                <div className={style.alignRight}>
-                  <span className={style.rightComp} onMouseOver={() => this.handleMouseOver()}>
-                    <Search handleMouseOver={this.handleMouseOver} /> 
-                  </span>
-                  <span className={style.rightComp}>
-                    <Login /> 
-                  </span>
-                  <span className={style.rightComp}>
-                    <Cart />
-                  </span>
-                </div>
-            </div>
+      <div className={style.navbar}>
+        <div className={style.topComp}>
+          <div className={style.alignLeft}>
+            <Logo />
+              <div className={style.alignRight}>
+                <span className={style.rightComp}>
+                  <Search handleMouseOver={this.handleMouseOver} /> 
+                </span>
+                <span className={style.rightComp}>
+                  <Login /> 
+                </span>
+                <span className={style.rightComp}>
+                  <Cart />
+                </span>
+              </div>
           </div>
-          {/* conditional render */}
-          {
-            this.state.hover ? 
-            <div className={style.searchBoxDiv}>
-              <form className={style.searchBoxForm}>
-                <input type="text" placeholder="What can we help you find?" onKeyUp={this.handleSearchResults}/>
-                  <svg focusable="false" height="12" width="12" className={style.searchExit} transform="translate(-20,-28)">
-                    <path d="M2 2l8 8m0-8l-8 8"></path>
-                  </svg>
-              </form>
-              <ul className={style.searchResults}>
-                {this.state.results.map((result, index) => <SearchResults key={index} result={result} />)}
-              </ul>
-            </div>
-            : '' 
-          }
-
-          <div>
-            <Departments 
-              departments={this.state.departments}
-              categories={this.state.categories}
-              hover={this.state.hover} 
-              getCategories={this.getCategories}
-              handleMouseOut={this.handleMouseOut} />
+        </div>
+        {/* search conditional render */}
+        {
+          this.state.searchHover ? 
+          <div id="searchResults" className={style.searchBoxDiv}>
+            <form className={style.searchBoxForm}>
+              <input type="text" placeholder="What can we help you find?" onKeyUp={this.handleSearchResults}/>
+              <a href="#" onClick={() => this.handleMouseOut('searchHover')}>
+                <svg focusable="false" height="12" width="12" className={style.searchExit} transform="translate(-20,-28)">
+                  <path d="M2 2l8 8m0-8l-8 8"></path>
+                </svg> 
+              </a>
+            </form>
+            <ul className={style.searchResults}>
+              {this.state.results.map((result, index) => <SearchResults key={index} result={result} />)}
+            </ul>
           </div>
+          : '' 
+        }
 
+        {/* account conditional render */}
+        {
+          this.state.accountHover ? 
+          <div className={style.searchBoxDiv}>
+            <form className={style.searchBoxForm}>
+              <input type="text" placeholder="What can we help you find?" onKeyUp={this.handleSearchResults}/>
+              <a href="#" onClick={() => this.handleMouseOut('searchHover')}>
+                <svg focusable="false" height="12" width="12" className={style.searchExit} transform="translate(-20,-28)">
+                  <path d="M2 2l8 8m0-8l-8 8"></path>
+                </svg> 
+              </a>
+            </form>
+            <ul className={style.searchResults}>
+              {this.state.results.map((result, index) => <SearchResults key={index} result={result} />)}
+            </ul>
+          </div>
+          : '' 
+        }
+        <div className={style.departments}>
+          <Departments 
+            departments={this.state.departments}
+            categories={this.state.categories}
+            hover={this.state.hover} 
+            getCategories={this.getCategories}
+            handleMouseOut={this.handleMouseOut} />
 
         </div>
-          
-
       </div>
     )
   }

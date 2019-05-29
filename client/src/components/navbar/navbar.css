@@ -1,3 +1,23 @@
+.bgImg {
+  background-image: url('https://images-na.ssl-images-amazon.com/images/I/51t89KPVUsL._SX425_.jpg');
+  background-color: paleturquoise;
+  height:100%;
+  width:100%;
+  /* -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(10px); */
+}
+
+/* body :not(div) {
+  -webkit-filter: blur(2px);
+  -moz-filter: blur(2px);
+  -o-filter: blur(2px);
+  -ms-filter: blur(2px);
+  filter: blur(2px);
+} */
+
 .alignLeft {
   text-align: left;
 }
@@ -7,18 +27,15 @@
 }
 
 .navbar {
-  margin: 3% 5% 0 5%;
+  margin: 3% 2% 0 2%;
 }
 
 .topComp {
-  /* z-index: 1;
-  position: absolute; */
   margin: 25px 0 35px 0;
 }
 
 .rightComp {
-  margin: 0 0 0 10px;
-  /* position:relative; */
+  margin: 0 0 0 30px;
 }
 
 /* search box related */
@@ -30,12 +47,10 @@
   border: 1px solid #e3e3e3;
   box-shadow: 0 0 5px 1px rgba(0,0,0,.11);
   right: 5%;
-  top: 11%;
+  top: 17%;
 }
 
 .searchBoxForm {
-  /* display: flex; */
-  /* position: relative; */
   height: 60px;
   width: 405px;
 }
@@ -60,11 +75,9 @@
 .searchExit {
   z-index: 2;
   float: right;
-  /* position: absolute; */
 }
 
 .searchExit path {
-
   fill: none;
   stroke: #737373;
   stroke-linecap: round;
@@ -84,4 +97,29 @@
 
 .searchResults li {
   margin: 10px 0 10px 0;
+}
+
+/* account box related */
+
+.accountBoxDiv {
+  z-index: 1;
+  position: absolute;
+  background: #fff;
+  border: 1px solid #e3e3e3;
+  box-shadow: 0 0 5px 1px rgba(0,0,0,.11);
+  /* right: 5%;
+  top: 17%; */
+}
+
+.accountBoxForm {
+  
+}
+
+.departments:hover ~ body {
+  background-color: paleturquoise;
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(10px);
 }

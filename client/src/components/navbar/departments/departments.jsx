@@ -4,24 +4,22 @@ import Categories from '../categories/categories';
 import style from './departments.css';
 
 const Departments = (props) => (
-  <nav>
+  <div>
+
     <div className={style.center}>
         {props.departments.map((department, index) => 
           <DepartmentItem 
-            key={index}
-            index={index} 
+          key={index}
+          index={index} 
             department={department}
             total={props.departments.length}
-            hover={props.hover}
-            getCategories={props.getCategories}
-            handleMouseOut={props.handleMouseOut} />)}
+            getCategories={props.getCategories} />)}
 
     </div>
-    <div className={style.categoryCenter}>
-      {props.categories.map((category, index) => <Categories key={index} category={category} total={props.categories.length} />)}
-    </div>
-
-  </nav>
+    <nav className={style.categoryCenter}>
+        {props.categories.map((category, index) => <Categories key={index} category={category} total={props.categories.length} />)}
+    </nav>
+  </div>
 )
 
 export default Departments;

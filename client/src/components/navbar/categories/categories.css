@@ -10,6 +10,11 @@
   font-style: normal;
 }
 
+.divCat {
+  height: 500px;
+  background-color: #fff;
+}
+
 .categories {
   margin: auto;
   /* display: inline-block; */
