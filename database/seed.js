@@ -9,9 +9,9 @@ const models = require('./models.js');
 */
 
 const seed = () => {
-  // models.Department.create(items)
-  //   .then(() => 'Seeded items to Department document. Please verify that items has been seeded.')
-  //   .catch(() => 'Error seeding items to Department document.')
+  models.Department.create(items)
+    .then(() => 'Seeded items to Department document. Please verify that items has been seeded.')
+    .catch(() => 'Error seeding items to Department document.')
 
     models.Search.create(search)
     .then(() => 'Seeded search results to Search document. Please verify that search results has been seeded.')

@@ -132,7 +132,7 @@ class Navbar extends React.Component {
           </div>
           : '' 
         }
-        <div className={style.departments}>
+        <div>
           <Departments 
             departments={this.state.departments}
             categories={this.state.categories}
@@ -141,6 +141,9 @@ class Navbar extends React.Component {
             handleMouseOut={this.handleMouseOut} />
 
         </div>
+        {/* <div>
+          <img src="http://static1.squarespace.com/static/52512705e4b062435b66fb1f/t/56caded2859fd07d71c0bb68/1554376892380/"></img>
+        </div> */}
       </div>
     )
   }
