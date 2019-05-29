@@ -52,7 +52,7 @@ class Navbar extends React.Component {
 
   retrieveData() {
     axios
-      .get('/api/navbar')
+      .get('/navbar/navbar')
       .then(({ data }) => this.setState({ departments: data }, () => console.log(this.state.departments)))
       .catch(err => console.log(err))
   }
@@ -61,7 +61,7 @@ class Navbar extends React.Component {
     if (e.target.value) {
       this.setState({ search: e.target.value }, () => 
         axios
-          .get(`/api/search/${this.state.search}`)
+          .get(`/navbar/search/${this.state.search}`)
           .then(({ data }) => this.setState({ results: data }))
           .catch(err => console.log(err)))
     } else {

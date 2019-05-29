@@ -10,7 +10,7 @@ const Categories = (props) => {
   };
 
   return (
-    // <div>
+    <div>
       <div style={inlineCat} className={style.divCat}>
         <span className={style.categories}>
           {props.category.name}
@@ -19,7 +19,7 @@ const Categories = (props) => {
           </ul>  
         </span>
       </div>
-    // </div>
+    </div>
   )
 }
 

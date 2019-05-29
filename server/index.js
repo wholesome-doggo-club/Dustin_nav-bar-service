@@ -11,7 +11,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 // router
-app.use('/api', router)
+app.use('/navbar', router)
 
 // serving static client front-end files
 app.use(express.static(path.resolve(__dirname, '../client/dist')));
