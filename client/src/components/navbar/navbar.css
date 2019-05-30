@@ -102,11 +102,13 @@
 /* account box related */
 
 .accountBoxDiv {
-  z-index: 1;
+  z-index: 6;
   position: absolute;
   background: #fff;
   border: 1px solid #e3e3e3;
   box-shadow: 0 0 5px 1px rgba(0,0,0,.11);
+  width: 500px;
+  length: 500px;
   /* right: 5%;
   top: 17%; */
 }
@@ -129,11 +131,11 @@
   filter: blur(10px);
 }
 
-.test {
+.overlayDiv {
   height: 100%;
   width: 99%;
-  z-index: 13;
-  position: relative;
+  z-index: 999999;
+  position: absolute;
   left:8px;
   top:200px;
   -webkit-filter: blur(5px);
@@ -144,6 +146,7 @@
 }
 
 .moreTest {
+  position:absolute;
   z-index: -1;
 }
 

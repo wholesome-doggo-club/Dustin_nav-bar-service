@@ -379,6 +379,9 @@
         ]
       },
       {
+        "name": "Furniture"
+      },
+      {
         "name": "Tabletop & Kitchen",
         "subcategories": [
           { "name": "Bar Accessories" },
@@ -397,6 +400,9 @@
           { "name": "Smart Home" },
           { "name": "Speakers & Home Audio" }
         ]
+      },
+      {
+        "name": "Luggage & Travel"
       },
       {
         "name": "Gifts",
@@ -500,6 +506,18 @@
           { "name": "Hair Styling Products" },
           { "name": "Shampoo & Conditioner" }
         ]
+      },
+      {
+        "name": "Tools, Brushes, & Makeup Bags"
+      },
+      {
+        "name": "Natural Beauty & Wellness"
+      },
+      {
+        "name": "Bath & Body"
+      },
+      {
+        "name": "Men's Grooming & Cologne"
       }
     ]  
   },

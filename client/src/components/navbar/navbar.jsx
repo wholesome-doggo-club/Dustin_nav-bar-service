@@ -118,18 +118,8 @@ class Navbar extends React.Component {
         {/* account conditional render */}
         {
           this.state.accountHover ? 
-          <div className={style.searchBoxDiv}>
-            <form className={style.searchBoxForm}>
-              <input type="text" placeholder="What can we help you find?" onKeyUp={this.handleSearchResults}/>
-              <a href="#" onClick={() => this.handleMouseOut('searchHover')}>
-                <svg focusable="false" height="12" width="12" className={style.searchExit} transform="translate(-20,-28)">
-                  <path d="M2 2l8 8m0-8l-8 8"></path>
-                </svg> 
-              </a>
-            </form>
-            <ul className={style.searchResults}>
-              {this.state.results.map((result, index) => <SearchResults key={index} result={result} />)}
-            </ul>
+          <div>
+            
           </div>
           : '' 
         }
@@ -144,11 +134,11 @@ class Navbar extends React.Component {
 
         {/* {this.state.nav ?  : ''} */}
 
-        <div className={style.test}>
-          
+        {/* <div className={style.overlayDiv}>
+          testasfmaskfnaklsnflkasn
         </div>
         
-        {/* <div styleName={style.moreTest}>
+        <div styleName={style.moreTest}>
           <img src="http://static1.squarespace.com/static/52512705e4b062435b66fb1f/t/56caded2859fd07d71c0bb68/1554376892380/"></img>
         </div> */}
       </div>
