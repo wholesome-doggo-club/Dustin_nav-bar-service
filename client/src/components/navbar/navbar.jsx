@@ -41,6 +41,7 @@ class Navbar extends React.Component {
   handleMouseOut(stateName) {
     if (stateName === 'nav') {
       this.setState({
+        nav: false,
         categories: [],
         subcategories: []
       })
@@ -137,8 +138,17 @@ class Navbar extends React.Component {
           categories={this.state.categories}
           hover={this.state.hover} 
           getCategories={this.getCategories}
+          handleMouseOver={this.handleMouseOver}
           handleMouseOut={this.handleMouseOut} />
-        {/* <div>
+        
+
+        {/* {this.state.nav ?  : ''} */}
+
+        <div className={style.test}>
+          
+        </div>
+        
+        {/* <div styleName={style.moreTest}>
           <img src="http://static1.squarespace.com/static/52512705e4b062435b66fb1f/t/56caded2859fd07d71c0bb68/1554376892380/"></img>
         </div> */}
       </div>

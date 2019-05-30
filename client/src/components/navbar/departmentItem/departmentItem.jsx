@@ -13,7 +13,7 @@ const DepartmentItem = (props) => {
 
   return (
     <div style={inlineDep}>
-      <span className={style.departments} onMouseOver={() => props.getCategories(props.index)}>
+      <span className={style.departments} onMouseOver={() => {props.getCategories(props.index); props.handleMouseOver('nav');}}>
         {props.department.name}
       </span>
     </div>

@@ -128,3 +128,22 @@
   -ms-filter: blur(5px);
   filter: blur(10px);
 }
+
+.test {
+  height: 100%;
+  width: 99%;
+  z-index: 13;
+  position: relative;
+  left:8px;
+  top:200px;
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(10px);
+}
+
+.moreTest {
+  z-index: -1;
+}
+
