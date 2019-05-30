@@ -35,7 +35,7 @@ class Navbar extends React.Component {
   }
 
   handleMouseOver(stateName) {
-    this.setState({ [stateName]: true })
+    this.setState({ [stateName]: true }, () => console.log('moused on', stateName, this.state))
   }
 
   handleMouseOut(stateName) {
@@ -88,10 +88,14 @@ class Navbar extends React.Component {
                   <Search handleMouseOver={this.handleMouseOver} /> 
                 </span>
                 <span className={style.rightComp}>
-                  <Login /> 
+                  <Login 
+                    handleMouseOver={this.handleMouseOver}
+                    handleMouseOut={this.handleMouseOut} /> 
                 </span>
                 <span className={style.rightComp}>
-                  <Cart />
+                  <Cart
+                    handleMouseOver={this.handleMouseOver}
+                    handleMouseOut={this.handleMouseOut} />
                 </span>
               </div>
           </div>
@@ -99,7 +103,7 @@ class Navbar extends React.Component {
         {/* search conditional render */}
         {
           this.state.searchHover ? 
-          <div id="searchResults" className={style.searchBoxDiv}>
+          <div className={style.searchBoxDiv}>
             <form className={style.searchBoxForm}>
               <input type="text" placeholder="What can we help you find?" onKeyUp={this.handleSearchResults}/>
               <a href="#" onClick={() => this.handleMouseOut('searchHover')}>
@@ -118,11 +122,31 @@ class Navbar extends React.Component {
         {/* account conditional render */}
         {
           this.state.accountHover ? 
-          <div>
-            
+          <div className={style.accountDiv}>
+            <ul>
+              <li><button class={style.accountSignBtn}>Sign In</button></li>
+              <li>Your Account</li>
+              <li>Wish List</li>
+              <li>Set Your Store</li>
+            </ul>
           </div>
           : '' 
         }
+
+        {/* cart conditional render */}
+        {
+          this.state.cartHover ? 
+          <div className={style.cartDiv}>
+            <div className={style.cartDivInt}>
+             <span><u>Sign in</u> to see what you may have added before.</span>
+            </div>
+          </div>
+          : '' 
+        }
+
+        <div>
+
+        </div>
         <Departments 
           departments={this.state.departments}
           categories={this.state.categories}
@@ -132,15 +156,15 @@ class Navbar extends React.Component {
           handleMouseOut={this.handleMouseOut} />
         
 
-        {/* {this.state.nav ?  : ''} */}
-
-        {/* <div className={style.overlayDiv}>
-          testasfmaskfnaklsnflkasn
-        </div>
+        {/* {this.state.nav ? <div className={style.overlayDiv}>
+          
+          </div> : ''} */}
         
-        <div styleName={style.moreTest}>
+        
+        {/* <div className={style.testImg}>
           <img src="http://static1.squarespace.com/static/52512705e4b062435b66fb1f/t/56caded2859fd07d71c0bb68/1554376892380/"></img>
         </div> */}
+
       </div>
     )
   }

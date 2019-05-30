@@ -2,7 +2,7 @@ import React from 'react';
 import style from './search.css';
 
 const Search = (props) => (
-  <span className={style.search} onMouseOver={() => props.handleMouseOver('searchHover')}>
+  <span className={style.search} onMouseEnter={() => props.handleMouseOver('searchHover')}>
     <svg focusable="false" height="24" width="21" transform="translate(-5,5)">
       <path transform="rotate(-44.984 16.5 18.5)" className={style.searchIcon} d="M15.288 14.762h2.424v7.475h-2.424z"></path>
       <path className={style.searchIcon} d="M13.5 15.5l-1-1"></path>
