@@ -10,10 +10,10 @@ const Categories = (props) => {
   };
 
   return (
-    <div>
+    <div className={style.divWholeCatAlign}>
       <div style={inlineCat} className={style.divCat}>
         <span className={style.categories}>
-          {props.category.name}
+          <strong>{props.category.name}</strong>
           <ul className={style.subcategories}>
             {props.category.subcategories.map((subcategory, index) => <Subcategories key={index} subcategory={subcategory} />)}
           </ul>  

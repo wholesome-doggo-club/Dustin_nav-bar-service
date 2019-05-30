@@ -12,11 +12,11 @@
 
 .divCat {
   height: 500px;
-  background-color: rgba(255, 255, 255, 0.85);
+  background-color: rgba(255, 255, 255, 0.95);
 }
 
 .categories {
-  margin: auto;
+  /* margin-top: 100px; */
   /* display: inline-block; */
   font-family: 'Brandon Text Bold';
   font-weight: 400;
@@ -38,4 +38,8 @@
 
 .subcategories li {
   margin: 10px 0 10px 0;
+}
+
+.divWholeCatAlign {
+  margin-top: 70px;
 }

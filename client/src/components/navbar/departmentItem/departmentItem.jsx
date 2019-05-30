@@ -6,6 +6,7 @@ const DepartmentItem = (props) => {
   const inlineDep = {
     float: 'left',
     width: (100 / props.total) + '%',
+    // height:'50px'
     // position: 'absolute'
     
   }

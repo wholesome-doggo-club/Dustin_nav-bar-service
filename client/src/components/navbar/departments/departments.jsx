@@ -4,7 +4,7 @@ import Categories from '../categories/categories';
 import style from './departments.css';
 
 const Departments = (props) => (
-  <div>
+  <div className={style.departmentsDiv} onMouseLeave={() => props.handleMouseOut('nav')}>
 
     <div className={style.center}>
         {props.departments.map((department, index) => 
@@ -16,9 +16,9 @@ const Departments = (props) => (
             getCategories={props.getCategories} />)}
 
     </div>
-    <nav className={style.categoryCenter}>
+    <div className={style.categoryCenter}>
         {props.categories.map((category, index) => <Categories key={index} category={category} total={props.categories.length} />)}
-    </nav>
+    </div>
   </div>
 )
 
