@@ -1,7 +1,7 @@
 const items = require('../data/items.json');
 const search = require('../data/search.json');
 
-
+const mongoose = require('mongoose')
 const models = require('./models.js');
 /*
   Department,
@@ -10,12 +10,14 @@ const models = require('./models.js');
 
 const seed = () => {
   models.Department.create(items)
-    .then(() => console.log('Seeded items to Department document. Please verify that items has been seeded.'))
+    .then(() => mongoose.connection.close())
     .catch(() => console.log('Error seeding items to Department document.'))
 
-    models.Search.create(search)
-    .then(() => console.log('Seeded search results to Search document. Please verify that search results has been seeded.'))
+  models.Search.create(search)
+    .then(()  => mongoose.connection.close())
+    .then(() => console.log('Seeding done.'))
     .catch(() => console.log('Error seeding search results to Search document.'))
+
 }
 
 // invoke seed via npm script
