@@ -6,7 +6,7 @@ import style from './departments.css';
 const Departments = (props) => (
   <div className={style.departmentsDiv} onMouseLeave={() => props.handleMouseOut('nav')}>
 
-    <div className={style.center}>
+    <div>
         {props.departments.map((department, index) => 
           <DepartmentItem 
           key={index}

@@ -23,6 +23,7 @@
   font-size: 95%;
   line-height: 1.4;
   color: #333;
+  margin: 0 5px 0 5px;
 }
 
 .subcategories {
@@ -37,9 +38,12 @@
 }
 
 .subcategories li {
-  margin: 10px 0 10px 0;
+  margin: 10px 5px 10px 5px;
 }
 
 .divWholeCatAlign {
   margin-top: 35px;
+  /* margin-left: 5.6%;
+  margin-right: auto;
+  width: 90%; */
 }

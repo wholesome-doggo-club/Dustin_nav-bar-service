@@ -39,9 +39,9 @@ class Navbar extends React.Component {
 
   handleMouseOver(stateName, idx) {
     if (stateName === 'resultHoverIdx') {
-      this.setState({ [stateName]: idx }, () => console.log(stateName, this.state))
+      this.setState({ [stateName]: idx })
     } else {
-      this.setState({ [stateName]: true }, () => console.log('moused on', stateName, this.state))
+      this.setState({ [stateName]: true })
     }
   }
 
@@ -53,7 +53,7 @@ class Navbar extends React.Component {
         subcategories: []
       }, () => this.handleRemoveClass())
     } else {
-      this.setState({ [stateName]: false }, () => console.log('moused out', this.state.stateName))
+      this.setState({ [stateName]: false })
     }
 
   }
@@ -61,7 +61,7 @@ class Navbar extends React.Component {
   retrieveData() {
     axios
       .get('/navbar/navbar')
-      .then(({ data }) => this.setState({ departments: data }, () => console.log(this.state.departments)))
+      .then(({ data }) => this.setState({ departments: data }))
       .catch(err => console.log(err))
   }
 
@@ -89,9 +89,17 @@ class Navbar extends React.Component {
     let morelooks = document.getElementById('morelooks');
     let reviews = document.getElementById('reviews');
 
-    productDescription.classList.add(style);
-    morelooks.classList.add(style);
-    reviews.classList.add(style);
+    if (productDescription) {
+      productDescription.classList.add(style);
+    }
+
+    if (morelooks) {
+      morelooks.classList.add(style);
+    }
+
+    if (reviews) {
+      reviews.classList.add(style);
+    }
   }
 
   handleRemoveClass() {
@@ -99,9 +107,17 @@ class Navbar extends React.Component {
     let morelooks = document.getElementById('morelooks');
     let reviews = document.getElementById('reviews');
 
-    productDescription.classList.remove(productDescription.className)
-    morelooks.classList.remove(morelooks.className)
-    reviews.classList.remove(reviews.className)
+    if (productDescription && productDescription.className) {
+      productDescription.classList.remove(productDescription.className);
+    }
+
+    if (morelooks && morelooks.className) {
+      morelooks.classList.remove(morelooks.className);
+    }
+
+    if (reviews && reviews.className) {
+      reviews.classList.remove(reviews.className);
+    }
   }
 
   render() {
@@ -172,7 +188,7 @@ class Navbar extends React.Component {
           this.state.accountHover ? 
           <div className={style.accountDiv}>
             <ul>
-              <li><button class={style.accountSignBtn}>Sign In</button></li>
+              <li><button className={style.accountSignBtn}>Sign In</button></li>
               <li>Your Account</li>
               <li>Wish List</li>
               <li>Set Your Store</li>
