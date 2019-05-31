@@ -15,6 +15,7 @@ class Navbar extends React.Component {
     this.state = {
       search: '',
       results: [],
+      resultHoverIdx: 0,
       departments: [],
       categories: [],
       subcategories: [],
@@ -34,8 +35,12 @@ class Navbar extends React.Component {
     this.retrieveData();
   }
 
-  handleMouseOver(stateName) {
-    this.setState({ [stateName]: true }, () => console.log('moused on', stateName, this.state))
+  handleMouseOver(stateName, idx) {
+    if (stateName === 'resultHoverIdx') {
+      this.setState({ [stateName]: idx }, () => console.log(stateName, this.state))
+    } else {
+      this.setState({ [stateName]: true }, () => console.log('moused on', stateName, this.state))
+    }
   }
 
   handleMouseOut(stateName) {
@@ -107,14 +112,34 @@ class Navbar extends React.Component {
             <form className={style.searchBoxForm}>
               <input type="text" placeholder="What can we help you find?" onKeyUp={this.handleSearchResults}/>
               <a href="#" onClick={() => this.handleMouseOut('searchHover')}>
-                <svg focusable="false" height="12" width="12" className={style.searchExit} transform="translate(-20,-28)">
+                <svg height="12" width="12" className={style.searchExit} transform="translate(-20,-28)">
                   <path d="M2 2l8 8m0-8l-8 8"></path>
                 </svg> 
               </a>
             </form>
             <ul className={style.searchResults}>
-              {this.state.results.map((result, index) => <SearchResults key={index} result={result} />)}
+              {this.state.results.map((result, index) => <SearchResults key={index} index={index} result={result} handleMouseOver={this.handleMouseOver} />)}
             </ul>
+            
+            {this.state.results.length ? 
+              <div>
+                <div className={style.featuredResult}>
+                <span>
+                  <strong>Featured results for "{this.state.results[this.state.resultHoverIdx].name}"</strong>
+                </span>
+                </div> 
+                <div className={style.imgResultDiv}>
+                  <ul>
+                    {this.state.results[this.state.resultHoverIdx].images.map((imageElement, index) => 
+                      <li onMouseEnter={() => this.handleMouseOver(index)} onMouseOut={() => this.handleMouseOut(index)}>
+                        {this.state[index] ? <img className={style.imgResult} src={imageElement.imgTwo} /> : <img className={style.imgResult} src={imageElement.imgOne} />}
+                      </li>)
+                    }
+                  </ul>
+                </div>
+
+              </div> : ''}
+            
           </div>
           : '' 
         }

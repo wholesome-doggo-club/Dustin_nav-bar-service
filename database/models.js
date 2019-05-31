@@ -21,8 +21,15 @@ const Department = mongoose.model('departments', departmentSchema);
 
 /* Search items */
 
+const imageSchema = new mongoose.Schema({
+  // productName: String,
+  imgOne: String,
+  imgTwo: String
+})
+
 const searchSchema = new mongoose.Schema({
-  name: String
+  name: String,
+  images: [imageSchema]
 })
 
 const Search = mongoose.model('searches', searchSchema)
