@@ -1,9 +1,10 @@
 import React from 'react';
-import DepartmentItem from '../departmentItem/departmentItem';
-import Categories from '../categories/categories';
-import style from './departments.css';
+import DepartmentItem from '../DepartmentItem/DepartmentItem';
+import Categories from '../Categories/Categories';
+import style from './Departments.css';
 
 const Departments = (props) => (
+  // nav reset handler occurs here
   <div className={style.departmentsDiv} onMouseLeave={() => props.handleMouseOut('nav')}>
 
     <div>
@@ -18,9 +19,11 @@ const Departments = (props) => (
             handleAddClass={props.handleAddClass} />)}
 
     </div>
-    <div className={style.categoryCenter}>
+
+    <div className={style.centerAlignCategory}>
         {props.categories.map((category, index) => <Categories key={index} category={category} total={props.categories.length} />)}
     </div>
+
   </div>
 )
 

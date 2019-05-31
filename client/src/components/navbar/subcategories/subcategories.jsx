@@ -1,5 +1,5 @@
 import React from 'react';
-import style from './subcategories.css';
+import style from './Subcategories.css';
 
 const Subcategories = (props) => (
   <li>

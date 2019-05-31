@@ -5,11 +5,14 @@
   font-style: normal;
 }
 
+.bagNumber {
+  font-size: 85%;
+}
+
 .cart {
+  color: #333;
   font-family: 'Brandon Text';
   line-height: 1.4;
-  color: #333;
-  /* position: absolute; */
 }
 
 .emptyBag {
@@ -18,14 +21,10 @@
   stroke-miterlimit: 10;
 }
 
-.emptyBag1 {
+.emptyBagHook {
   fill: none;
   stroke: #393939;
   stroke-miterlimit: 10;
   stroke-linecap: round;
   stroke-linejoin: round;
-}
-
-.bagNumber {
-  font-size: 85%;
 }

@@ -6,13 +6,13 @@
 }
 
 .departments {
-  margin: 0 5% 0 0;
+  color: #333;
   display: inline-block;
-  padding-bottom: .5rem;
-  position: relative;
   font-family: 'Brandon Text';
   line-height: 1.4;
-  color: #333;
+  margin: 0 5% 0 0;
+  padding-bottom: .5rem;
+  position: relative;
 }
 
 .departments:hover {

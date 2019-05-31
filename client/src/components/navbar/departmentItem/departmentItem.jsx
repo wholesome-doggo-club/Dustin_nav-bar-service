@@ -1,19 +1,22 @@
 import React from 'react';
-import style from './departmentItem.css'
+import style from './DepartmentItem.css'
 
 const DepartmentItem = (props) => {
 
-  const inlineDep = {
+  const inlineVarAlign = {
     float: 'left',
     width: (100 / props.total) + '%',
-    // height:'50px'
-    // position: 'absolute'
-    
   }
 
   return (
-    <div style={inlineDep}>
-      <span className={style.departments} onMouseOver={() => {props.getCategories(props.index); props.handleMouseOver('nav'); props.handleAddClass(style.overlayDiv)}}>
+    <div style={inlineVarAlign}>
+      <span className={style.departments} onMouseOver={() => 
+        {
+          props.getCategories(props.index); // grabs the categories for that respective department nav item
+          props.handleMouseOver('nav');  // handler for individual nav item
+          props.handleAddClass(style.overlayDiv) // add class func for blur function
+        }
+      }>
         {props.department.name}
       </span>
     </div>

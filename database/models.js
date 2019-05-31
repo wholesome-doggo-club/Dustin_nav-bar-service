@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 require('./index.js'); // connecting DB: index.js -> models.js
 
-/* Navbar menu items */
+/* Nav-bar menu items */
 
 const subcategorySchema = new mongoose.Schema({
   name: String

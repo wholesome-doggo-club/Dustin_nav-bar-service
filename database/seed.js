@@ -8,6 +8,7 @@ const models = require('./models.js');
   Search
 */
 
+/* Seeds contents to Nav-bar as well as contents for Search results */
 const seed = () => {
   models.Department.create(items)
     .then(() => mongoose.connection.close())
