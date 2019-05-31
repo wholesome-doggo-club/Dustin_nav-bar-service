@@ -14,7 +14,8 @@ const Departments = (props) => (
             department={department}
             total={props.departments.length}
             getCategories={props.getCategories}
-            handleMouseOver={props.handleMouseOver} />)}
+            handleMouseOver={props.handleMouseOver}
+            handleAddClass={props.handleAddClass} />)}
 
     </div>
     <div className={style.categoryCenter}>

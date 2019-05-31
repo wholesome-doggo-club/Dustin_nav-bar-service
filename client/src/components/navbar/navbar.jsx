@@ -29,6 +29,8 @@ class Navbar extends React.Component {
     this.retrieveData = this.retrieveData.bind(this);
     this.handleSearchResults = this.handleSearchResults.bind(this);
     this.getCategories = this.getCategories.bind(this);
+    this.handleAddClass = this.handleAddClass.bind(this);
+    this.handleRemoveClass = this.handleRemoveClass.bind(this);
   }
 
   componentDidMount() {
@@ -49,7 +51,7 @@ class Navbar extends React.Component {
         nav: false,
         categories: [],
         subcategories: []
-      })
+      }, () => this.handleRemoveClass())
     } else {
       this.setState({ [stateName]: false }, () => console.log('moused out', this.state.stateName))
     }
@@ -82,6 +84,26 @@ class Navbar extends React.Component {
     this.setState({ categories: this.state.departments[idx].categories }, () => console.log('categories get', this.state.categories))
   }
 
+  handleAddClass(style) {
+    let productDescription = document.getElementById('productDescription');
+    let morelooks = document.getElementById('morelooks');
+    let reviews = document.getElementById('reviews');
+
+    productDescription.classList.add(style);
+    morelooks.classList.add(style);
+    reviews.classList.add(style);
+  }
+
+  handleRemoveClass() {
+    let productDescription = document.getElementById('productDescription');
+    let morelooks = document.getElementById('morelooks');
+    let reviews = document.getElementById('reviews');
+
+    productDescription.classList.remove(productDescription.className)
+    morelooks.classList.remove(morelooks.className)
+    reviews.classList.remove(reviews.className)
+  }
+
   render() {
     return (
       <div className={style.navbar}>
@@ -109,6 +131,7 @@ class Navbar extends React.Component {
         {
           this.state.searchHover ? 
           <div className={style.searchBoxDiv}>
+            <div className={style.searchBoxConnector}></div>
             <form className={style.searchBoxForm}>
               <input type="text" placeholder="What can we help you find?" onKeyUp={this.handleSearchResults}/>
               <a href="#" onClick={() => this.handleMouseOut('searchHover')}>
@@ -169,21 +192,19 @@ class Navbar extends React.Component {
           : '' 
         }
 
-        <div>
-
-        </div>
         <Departments 
           departments={this.state.departments}
           categories={this.state.categories}
           hover={this.state.hover} 
           getCategories={this.getCategories}
           handleMouseOver={this.handleMouseOver}
-          handleMouseOut={this.handleMouseOut} />
+          handleMouseOut={this.handleMouseOut}
+          handleAddClass={this.handleAddClass}
+          handleRemoveClass={this.handleRemoveClass} />
         
 
-        {/* {this.state.nav ? <div className={style.overlayDiv}>
-          
-          </div> : ''} */}
+        {/* {this.state.nav ? this.handleAddClass(style.overlayDiv) : 
+        this.state.blurFlag ? this.handleRemoveClass(style.overlayDiv) : ''} */}
         
         
         {/* <div className={style.testImg}>
