@@ -39,7 +39,7 @@ class NavBar extends React.Component {
 
   retrieveData() {
     axios
-      .get('/navbar/navbar')
+      .get('/navbar/navs')
       .then(({ data }) => this.setState({ departments: data }))
       .catch(err => console.log(err))
   }

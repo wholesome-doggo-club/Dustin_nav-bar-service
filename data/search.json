@@ -1,178 +1,513 @@
 [
-  { 
-    "name": "adidas",
-    "images": [
-      { "imgOne" : "https://fec-navbar.s3.us-east-2.amazonaws.com/search-dump/adidas/a836f576-55a2-496f-a5d1-a2ae207d8898.jpeg",
-        "imgTwo" : "https://fec-navbar.s3.us-east-2.amazonaws.com/search-dump/adidas/a6e64d91-a32d-4114-94d2-2884ba49a24c.jpeg"  },
-      { "imgOne" : "https://fec-navbar.s3.us-east-2.amazonaws.com/search-dump/adidas/ef4ad92d-201d-4461-a535-de636f9ccfb0.jpeg",
-        "imgTwo" : "https://fec-navbar.s3.us-east-2.amazonaws.com/search-dump/adidas/849a5ce1-be97-424a-b9bf-0b8bc1eb9ed7.jpeg"  },
-      { "imgOne" : "https://fec-navbar.s3.us-east-2.amazonaws.com/search-dump/adidas/b6a5c97e-9979-4520-a0e0-dd1e07133592.jpeg",
-        "imgTwo" : "https://fec-navbar.s3.us-east-2.amazonaws.com/search-dump/adidas/f990bcaa-6073-479d-9e59-3d1a9b6d40b5.jpeg"  }
+  {
+    "productName" : "adidas one",
+    "images" : [
+      { "imgUrl" : "https://fec-navbar.s3.us-east-2.amazonaws.com/search-dump/adidas/a836f576-55a2-496f-a5d1-a2ae207d8898.jpeg" },
+      { "imgUrl" : "https://fec-navbar.s3.us-east-2.amazonaws.com/search-dump/adidas/a6e64d91-a32d-4114-94d2-2884ba49a24c.jpeg" }
+    ],
+    "keywords": [
+      { "keyword": "adidas" }
     ]
   },
-  { 
-    "name": "alexander mcqueen",
-    "images": [
-      { "imgOne" : "https://fec-navbar.s3.us-east-2.amazonaws.com/search-dump/alexander+mcqueen/10a53cbd-8308-44c4-a77a-a1790eefd760.jpeg",
-        "imgTwo" : "https://fec-navbar.s3.us-east-2.amazonaws.com/search-dump/alexander+mcqueen/71162259-ea33-4f23-beab-f6f67c7e5d1d.jpeg"  },
-      { "imgOne" : "https://fec-navbar.s3.us-east-2.amazonaws.com/search-dump/alexander+mcqueen/849e921c-ded1-4a3f-9300-5d630fb3f89b.jpeg",
-        "imgTwo" : "https://fec-navbar.s3.us-east-2.amazonaws.com/search-dump/alexander+mcqueen/e78bb948-ca57-4656-80ea-89815aeb870a.jpeg"  },
-      { "imgOne" : "https://fec-navbar.s3.us-east-2.amazonaws.com/search-dump/alexander+mcqueen/d8015440-d6bc-491b-b221-10eab7b57701.jpeg",
-        "imgTwo" : "https://fec-navbar.s3.us-east-2.amazonaws.com/search-dump/alexander+mcqueen/c852c490-65f7-488e-a226-523912423fb3.jpeg"  }
+  {
+    "productName" : "adidas two",
+    "images" : [
+      { "imgUrl" : "https://fec-navbar.s3.us-east-2.amazonaws.com/search-dump/adidas/ef4ad92d-201d-4461-a535-de636f9ccfb0.jpeg" },
+      { "imgUrl" : "https://fec-navbar.s3.us-east-2.amazonaws.com/search-dump/adidas/849a5ce1-be97-424a-b9bf-0b8bc1eb9ed7.jpeg" }
+    ],
+    "keywords": [
+      { "keyword": "adidas" }
     ]
   },
-  { 
-    "name": "alice and olivia",
-    "images": [
-      { "imgOne" : "https://fec-navbar.s3.us-east-2.amazonaws.com/search-dump/alice+and+olivia/e151bb5c-5fc7-4053-b97f-be866c2a8fa0.jpeg",
-        "imgTwo" : "https://fec-navbar.s3.us-east-2.amazonaws.com/search-dump/alice+and+olivia/8c748570-d29e-404e-9d0b-aa03afc2a26c.jpeg"  },
-      { "imgOne" : "https://fec-navbar.s3.us-east-2.amazonaws.com/search-dump/alice+and+olivia/18b365d4-8222-47e2-9fb7-e9fbb13b2666.jpeg",
-        "imgTwo" : "https://fec-navbar.s3.us-east-2.amazonaws.com/search-dump/alice+and+olivia/8ff22245-fb18-4425-9c1c-fea85ff0498d.jpeg"  },
-      { "imgOne" : "https://fec-navbar.s3.us-east-2.amazonaws.com/search-dump/alice+and+olivia/b34bbd69-a653-4383-809d-e2c54296d8b2.jpeg",
-        "imgTwo" : "https://fec-navbar.s3.us-east-2.amazonaws.com/search-dump/alice+and+olivia/9cc9dd87-62e4-453b-b875-3004931204fc.jpeg"  }
+  {
+    "productName" : "adidas three",
+    "images" : [
+      { "imgUrl" : "https://fec-navbar.s3.us-east-2.amazonaws.com/search-dump/adidas/b6a5c97e-9979-4520-a0e0-dd1e07133592.jpeg" },
+      { "imgUrl" : "https://fec-navbar.s3.us-east-2.amazonaws.com/search-dump/adidas/f990bcaa-6073-479d-9e59-3d1a9b6d40b5.jpeg" }
+    ],
+    "keywords": [
+      { "keyword": "adidas" }
     ]
   },
-  { 
-    "name": "acne studios",
-    "images": [
-      { "imgOne" : "https://fec-navbar.s3.us-east-2.amazonaws.com/search-dump/acne+studios/6e911197-4d67-44be-bd4e-4ae701836c90.jpeg",
-        "imgTwo" : "https://fec-navbar.s3.us-east-2.amazonaws.com/search-dump/alice+and+olivia/e2757a6d-21e1-4ed4-b8d5-c0876e8249b2.jpeg"  },
-      { "imgOne" : "https://fec-navbar.s3.us-east-2.amazonaws.com/search-dump/acne+studios/06106a52-ca4e-4765-b7d1-30c3357f0801.jpeg",
-        "imgTwo" : "https://fec-navbar.s3.us-east-2.amazonaws.com/search-dump/alice+and+olivia/42e530b2-7578-4e7a-b141-868f42bc764e.jpeg"  },
-      { "imgOne" : "https://fec-navbar.s3.us-east-2.amazonaws.com/search-dump/acne+studios/d500fa5b-43d2-42d0-aa11-cc3231da1a74.jpeg",
-        "imgTwo" : "https://fec-navbar.s3.us-east-2.amazonaws.com/search-dump/alice+and+olivia/0fa295b5-7052-43e3-aa8a-ee1cf85867f5.jpeg"  }
+  {
+    "productName" : "alexander mcqueen one",
+    "images" : [
+      { "imgUrl" : "https://fec-navbar.s3.us-east-2.amazonaws.com/search-dump/alexander+mcqueen/10a53cbd-8308-44c4-a77a-a1790eefd760.jpeg" },
+      { "imgUrl" : "https://fec-navbar.s3.us-east-2.amazonaws.com/search-dump/alexander+mcqueen/71162259-ea33-4f23-beab-f6f67c7e5d1d.jpeg" }
+    ],
+    "keywords": [
+      { "keyword": "alexander mcqueen" }
     ]
   },
-  { 
-    "name": "burberry",
-    "images": [
-      { "imgOne" : "https://fec-navbar.s3.us-east-2.amazonaws.com/search-dump/burberry/6fc5e7ae-b246-489d-8f17-96b58fd097ff.jpeg",
-        "imgTwo" : "https://fec-navbar.s3.us-east-2.amazonaws.com/search-dump/burberry/e704c921-41b2-4369-84bd-399d53186cb5.jpeg"  },
-      { "imgOne" : "https://fec-navbar.s3.us-east-2.amazonaws.com/search-dump/burberry/8a9e15af-3e66-4591-b939-34498903f811.jpeg",
-        "imgTwo" : "https://fec-navbar.s3.us-east-2.amazonaws.com/search-dump/burberry/1600ec8f-5803-4c85-88f5-40c64f10f30b.jpeg"  },
-      { "imgOne" : "https://fec-navbar.s3.us-east-2.amazonaws.com/search-dump/burberry/947c14d0-7056-432d-bc6f-d03b44f7e9c7.jpeg",
-        "imgTwo" : "https://fec-navbar.s3.us-east-2.amazonaws.com/search-dump/burberry/b9b2b24c-e570-4620-9baa-d1438489bd5a.jpeg"  }
+  {
+    "productName" : "alexander mcqueen two",
+    "images" : [
+      { "imgUrl" : "https://fec-navbar.s3.us-east-2.amazonaws.com/search-dump/alexander+mcqueen/849e921c-ded1-4a3f-9300-5d630fb3f89b.jpeg" },
+      { "imgUrl" : "https://fec-navbar.s3.us-east-2.amazonaws.com/search-dump/alexander+mcqueen/e78bb948-ca57-4656-80ea-89815aeb870a.jpeg" }
+    ],
+    "keywords": [
+      { "keyword": "alexander mcqueen" }
     ]
   },
-  { 
-    "name": "balenciaga",
-    "images": [
-      { "imgOne" : "https://fec-navbar.s3.us-east-2.amazonaws.com/search-dump/balenciaga/44b843f0-fe3b-4fe5-8be0-434eee469333.jpeg",
-        "imgTwo" : "https://fec-navbar.s3.us-east-2.amazonaws.com/search-dump/balenciaga/f23e643a-b412-4153-8119-59792720a91b.jpeg"  },
-      { "imgOne" : "https://fec-navbar.s3.us-east-2.amazonaws.com/search-dump/balenciaga/d5f772c3-d3b4-44fd-92f3-afbd26559768.jpeg",
-        "imgTwo" : "https://fec-navbar.s3.us-east-2.amazonaws.com/search-dump/balenciaga/730a3e32-c550-46e8-a607-3d9ac82fa65d.jpeg"  },
-      { "imgOne" : "https://fec-navbar.s3.us-east-2.amazonaws.com/search-dump/balenciaga/f841d103-5a80-4436-8d5c-d6bc4ca2735d.jpeg",
-        "imgTwo" : "https://fec-navbar.s3.us-east-2.amazonaws.com/search-dump/balenciaga/ef9ab8da-e4d5-4584-88ae-fed414533653.jpeg"  }
+  {
+    "productName" : "alexander mcqueen three",
+    "images" : [
+      { "imgUrl" : "https://fec-navbar.s3.us-east-2.amazonaws.com/search-dump/alexander+mcqueen/d8015440-d6bc-491b-b221-10eab7b57701.jpeg" },
+      { "imgUrl" : "https://fec-navbar.s3.us-east-2.amazonaws.com/search-dump/alexander+mcqueen/c852c490-65f7-488e-a226-523912423fb3.jpeg" }
+    ],
+    "keywords": [
+      { "keyword": "alexander mcqueen" }
     ]
   },
-  { 
-    "name": "birkenstock",
-    "images": [
-      { "imgOne" : "https://fec-navbar.s3.us-east-2.amazonaws.com/search-dump/birkenstock/0f8cf4d4-f952-4d25-b97a-81f8840fef40.jpeg",
-        "imgTwo" : "https://fec-navbar.s3.us-east-2.amazonaws.com/search-dump/birkenstock/a5cb24a4-d632-4216-b807-2d3873bf899a.jpeg"  },
-      { "imgOne" : "https://fec-navbar.s3.us-east-2.amazonaws.com/search-dump/birkenstock/3b3b91f0-6373-4a78-9f0d-d64ff589be46.jpeg",
-        "imgTwo" : "https://fec-navbar.s3.us-east-2.amazonaws.com/search-dump/birkenstock/8323b204-51d8-4c2b-9b3c-7c086db1ae7f.jpeg"  },
-      { "imgOne" : "https://fec-navbar.s3.us-east-2.amazonaws.com/search-dump/birkenstock/26d6c4a0-ef55-4164-bd73-4754ca3308b5.jpeg",
-        "imgTwo" : "https://fec-navbar.s3.us-east-2.amazonaws.com/search-dump/birkenstock/c663bec9-3239-4137-952e-3794be70a82a.jpeg"  }
+  {
+    "productName" : "alice and olivia one",
+    "images" : [
+      { "imgUrl" : "https://fec-navbar.s3.us-east-2.amazonaws.com/search-dump/alice+and+olivia/e151bb5c-5fc7-4053-b97f-be866c2a8fa0.jpeg" },
+      { "imgUrl" : "https://fec-navbar.s3.us-east-2.amazonaws.com/search-dump/alice+and+olivia/8c748570-d29e-404e-9d0b-aa03afc2a26c.jpeg" }
+    ],
+    "keywords": [
+      { "keyword": "alice and olivia" }
     ]
   },
-  { 
-    "name": "backpacks",
-    "images": [
-      { "imgOne" : "https://fec-navbar.s3.us-east-2.amazonaws.com/search-dump/backpacks/387b57fe-12c0-4113-b12b-26f8b2569def.jpeg",
-        "imgTwo" : "https://fec-navbar.s3.us-east-2.amazonaws.com/search-dump/backpacks/2505b1ba-448b-486c-a7c5-2ff4474017af.jpeg"  },
-      { "imgOne" : "https://fec-navbar.s3.us-east-2.amazonaws.com/search-dump/backpacks/d56b6223-17a7-4c87-acc1-8966e7c19ce3.jpeg",
-        "imgTwo" : "https://fec-navbar.s3.us-east-2.amazonaws.com/search-dump/backpacks/eba9fa79-aa21-45c3-b233-7562bd3e1a5a.jpeg"  },
-      { "imgOne" : "https://fec-navbar.s3.us-east-2.amazonaws.com/search-dump/backpacks/d458248b-a2a6-4afd-8a14-2a584c720b3d.jpeg",
-        "imgTwo" : "https://fec-navbar.s3.us-east-2.amazonaws.com/search-dump/backpacks/2c017dca-17e5-4f17-af05-f8c1d3971d7c.jpeg"  }
+  {
+    "productName" : "alice and olivia two",
+    "images" : [
+      { "imgUrl" : "https://fec-navbar.s3.us-east-2.amazonaws.com/search-dump/alice+and+olivia/18b365d4-8222-47e2-9fb7-e9fbb13b2666.jpeg" },
+      { "imgUrl" : "https://fec-navbar.s3.us-east-2.amazonaws.com/search-dump/alice+and+olivia/8ff22245-fb18-4425-9c1c-fea85ff0498d.jpeg" }
+    ],
+    "keywords": [
+      { "keyword": "alice and olivia" }
     ]
   },
-  { 
-    "name": "christian louboutin",
-    "images": [
-      { "imgOne" : "https://fec-navbar.s3.us-east-2.amazonaws.com/search-dump/christian+louboutin/97211ca3-9faa-4e48-a394-b89d3e3df3c5.jpeg",
-        "imgTwo" : "https://fec-navbar.s3.us-east-2.amazonaws.com/search-dump/christian+louboutin/e3295c11-b630-41e8-8906-818a45b127ae.jpeg"  },
-      { "imgOne" : "https://fec-navbar.s3.us-east-2.amazonaws.com/search-dump/christian+louboutin/fd8d0eac-3cca-4262-bcaf-0fb58e94ef4d.jpeg",
-        "imgTwo" : "https://fec-navbar.s3.us-east-2.amazonaws.com/search-dump/christian+louboutin/583af573-263b-4f03-b5fe-e790e6a207d2.jpeg"  },
-      { "imgOne" : "https://fec-navbar.s3.us-east-2.amazonaws.com/search-dump/christian+louboutin/64e67a24-b4e2-43b9-a5e6-1d19132f16db.jpeg",
-        "imgTwo" : "https://fec-navbar.s3.us-east-2.amazonaws.com/search-dump/christian+louboutin/0c9f3af8-cf7b-4af2-8baa-1a4009c495c1.jpeg"  }
+  {
+    "productName" : "alice and olivia three",
+    "images" : [
+      { "imgUrl" : "https://fec-navbar.s3.us-east-2.amazonaws.com/search-dump/alice+and+olivia/b34bbd69-a653-4383-809d-e2c54296d8b2.jpeg" },
+      { "imgUrl" : "https://fec-navbar.s3.us-east-2.amazonaws.com/search-dump/alice+and+olivia/9cc9dd87-62e4-453b-b875-3004931204fc.jpeg" }
+    ],
+    "keywords": [
+      { "keyword": "alice and olivia" }
     ]
   },
-  { 
-    "name": "comme des garcons",
-    "images": [
-      { "imgOne" : "https://fec-navbar.s3.us-east-2.amazonaws.com/search-dump/comme+des+garcons/3f2c16fa-602f-465a-9d04-32bfdc6009a5.jpeg",
-        "imgTwo" : "https://fec-navbar.s3.us-east-2.amazonaws.com/search-dump/comme+des+garcons/43f4a141-0a3a-433e-b0d5-5e3bca1e8a01.jpeg"  },
-      { "imgOne" : "https://fec-navbar.s3.us-east-2.amazonaws.com/search-dump/comme+des+garcons/b4032d55-8afe-4372-8e5c-d1cf914c9441.jpeg",
-        "imgTwo" : "https://fec-navbar.s3.us-east-2.amazonaws.com/search-dump/comme+des+garcons/3f4eebb5-6068-4715-81d3-e494380e975d.jpeg"  },
-      { "imgOne" : "https://fec-navbar.s3.us-east-2.amazonaws.com/search-dump/comme+des+garcons/c772300e-1bcb-423d-8f0c-d85cb5ab154a.jpeg",
-        "imgTwo" : "https://fec-navbar.s3.us-east-2.amazonaws.com/search-dump/comme+des+garcons/66683352-a4f0-417c-be6c-c0d07358ae7d.jpeg"  }
+  {
+    "productName" : "acne studios one",
+    "images" : [
+      { "imgUrl" : "https://fec-navbar.s3.us-east-2.amazonaws.com/search-dump/acne+studios/6e911197-4d67-44be-bd4e-4ae701836c90.jpeg" },
+      { "imgUrl" : "https://fec-navbar.s3.us-east-2.amazonaws.com/search-dump/alice+and+olivia/e2757a6d-21e1-4ed4-b8d5-c0876e8249b2.jpeg" }
+    ],
+    "keywords": [
+      { "keyword": "acne studios" }
     ]
   },
-  { 
-    "name": "clinique",
-    "images": [
-      { "imgOne" : "https://fec-navbar.s3.us-east-2.amazonaws.com/search-dump/clinique/f5f70fff-589b-4ee5-b614-df6e53e585b5.jpeg",
-        "imgTwo" : "https://fec-navbar.s3.us-east-2.amazonaws.com/search-dump/clinique/ae4feabd-4179-45a3-a9c6-5251b4024655.jpeg"  },
-      { "imgOne" : "https://fec-navbar.s3.us-east-2.amazonaws.com/search-dump/clinique/74d1da0a-ab2a-479b-909e-b6c42e489d65.jpeg",
-        "imgTwo" : "https://fec-navbar.s3.us-east-2.amazonaws.com/search-dump/clinique/e9101eff-70cf-43f9-9c5b-02ca72a3dffa.jpeg"  },
-      { "imgOne" : "https://fec-navbar.s3.us-east-2.amazonaws.com/search-dump/clinique/8b99dbe5-87be-4e5b-9405-469ddf0ce728.jpeg",
-        "imgTwo" : "https://fec-navbar.s3.us-east-2.amazonaws.com/search-dump/clinique/44f6e00f-0fef-4ec7-8c9c-599d0b751517.jpeg"  }
+  {
+    "productName" : "acne studios two",
+    "images" : [
+      { "imgUrl" : "https://fec-navbar.s3.us-east-2.amazonaws.com/search-dump/acne+studios/06106a52-ca4e-4765-b7d1-30c3357f0801.jpeg" },
+      { "imgUrl" : "https://fec-navbar.s3.us-east-2.amazonaws.com/search-dump/alice+and+olivia/42e530b2-7578-4e7a-b141-868f42bc764e.jpeg" }
+    ],
+    "keywords": [
+      { "keyword": "acne studios" }
     ]
   },
-  { 
-    "name": "chanel",
-    "images": [
-      { "imgOne" : "https://fec-navbar.s3.us-east-2.amazonaws.com/search-dump/chanel/ee48f747-e8fc-472f-b6bd-85bca0554e17.jpeg",
-        "imgTwo" : "https://fec-navbar.s3.us-east-2.amazonaws.com/search-dump/chanel/be07e39a-305f-49c9-8698-d11800a9b520.jpeg"  },
-      { "imgOne" : "https://fec-navbar.s3.us-east-2.amazonaws.com/search-dump/chanel/34dcf010-5db4-4184-a163-36cd96786729.jpeg",
-        "imgTwo" : "https://fec-navbar.s3.us-east-2.amazonaws.com/search-dump/chanel/e4b2239a-7448-4beb-bd1a-74bfe6c22f78.jpeg"  },
-      { "imgOne" : "https://fec-navbar.s3.us-east-2.amazonaws.com/search-dump/chanel/156fd377-9954-4402-92e8-de55eb1a7be9.jpeg",
-        "imgTwo" : "https://fec-navbar.s3.us-east-2.amazonaws.com/search-dump/chanel/fe2ac94c-b759-4641-b6dc-b2fb8f9ae7d4.jpeg"  }
+  {
+    "productName" : "acne studios three",
+    "images" : [
+      { "imgUrl" : "https://fec-navbar.s3.us-east-2.amazonaws.com/search-dump/acne+studios/d500fa5b-43d2-42d0-aa11-cc3231da1a74.jpeg" },
+      { "imgUrl" : "https://fec-navbar.s3.us-east-2.amazonaws.com/search-dump/alice+and+olivia/0fa295b5-7052-43e3-aa8a-ee1cf85867f5.jpeg" }
+    ],
+    "keywords": [
+      { "keyword": "acne studios" }
     ]
   },
-  { 
-    "name": "dresses",
-    "images": [
-      { "imgOne" : "https://fec-navbar.s3.us-east-2.amazonaws.com/search-dump/dresses/5df19a49-ac10-4948-9eff-bc014bfb3a25.jpeg",
-        "imgTwo" : "https://fec-navbar.s3.us-east-2.amazonaws.com/search-dump/dresses/45b7a35a-e188-4ee5-8dd6-851627e66317.jpeg"  },
-      { "imgOne" : "https://fec-navbar.s3.us-east-2.amazonaws.com/search-dump/dresses/92c408d7-ce03-4a7a-bbad-456edbe9e87d.jpeg",
-        "imgTwo" : "https://fec-navbar.s3.us-east-2.amazonaws.com/search-dump/dresses/6db46e92-98f9-433a-b61b-2dc7ddc07b36.jpeg"  },
-      { "imgOne" : "https://fec-navbar.s3.us-east-2.amazonaws.com/search-dump/dresses/ce2eb36b-5870-4286-adf9-30f24e563bfc.jpeg",
-        "imgTwo" : "https://fec-navbar.s3.us-east-2.amazonaws.com/search-dump/dresses/759f9467-c57e-4656-b1e2-5476d3f56c60.jpeg"  }
+  {
+    "productName" : "burberry one",
+    "images" : [
+      { "imgUrl" : "https://fec-navbar.s3.us-east-2.amazonaws.com/search-dump/burberry/6fc5e7ae-b246-489d-8f17-96b58fd097ff.jpeg" },
+      { "imgUrl" : "https://fec-navbar.s3.us-east-2.amazonaws.com/search-dump/burberry/e704c921-41b2-4369-84bd-399d53186cb5.jpeg" }
+    ],
+    "keywords": [
+      { "keyword": "burberry" }
     ]
   },
-  { 
-    "name": "dior",
-    "images": [
-      { "imgOne" : "https://fec-navbar.s3.us-east-2.amazonaws.com/search-dump/dior/e2d552b3-79d3-48a2-9ebe-4362391f9677.jpeg",
-        "imgTwo" : "https://fec-navbar.s3.us-east-2.amazonaws.com/search-dump/dior/26d73929-01fb-4654-a5b1-1a3683a68ac6.jpeg"  },
-      { "imgOne" : "https://fec-navbar.s3.us-east-2.amazonaws.com/search-dump/dior/fcc5cc21-dd48-4920-b822-f38fc13454cf.jpeg",
-        "imgTwo" : "https://fec-navbar.s3.us-east-2.amazonaws.com/search-dump/dior/775a0736-21c3-4da9-a85d-38f693672194.jpeg"  },
-      { "imgOne" : "https://fec-navbar.s3.us-east-2.amazonaws.com/search-dump/dior/080ebd17-be24-44eb-a5a6-4d70e1a393e2.jpeg",
-        "imgTwo" : "https://fec-navbar.s3.us-east-2.amazonaws.com/search-dump/dior/c49a70a7-f49d-4cd2-bf73-bc86bfb155f1.jpeg"  }
+  {
+    "productName" : "burberry two",
+    "images" : [
+      { "imgUrl" : "https://fec-navbar.s3.us-east-2.amazonaws.com/search-dump/burberry/8a9e15af-3e66-4591-b939-34498903f811.jpeg" },
+      { "imgUrl" : "https://fec-navbar.s3.us-east-2.amazonaws.com/search-dump/burberry/1600ec8f-5803-4c85-88f5-40c64f10f30b.jpeg" }
+    ],
+    "keywords": [
+      { "keyword": "burberry" }
     ]
   },
-  { 
-    "name": "dagne dover",
-    "images": [
-      { "imgOne" : "https://fec-navbar.s3.us-east-2.amazonaws.com/search-dump/dagne+dover/5bb9d748-dc0b-4397-9ab3-245186764909.jpeg",
-        "imgTwo" : "https://fec-navbar.s3.us-east-2.amazonaws.com/search-dump/dagne+dover/e9ff8055-8d57-42a3-833c-c43b523810e8.jpeg"  },
-      { "imgOne" : "https://fec-navbar.s3.us-east-2.amazonaws.com/search-dump/dagne+dover/b4c8dbd5-3b41-4da3-bdd7-74e5f88ec5cf.jpeg",
-        "imgTwo" : "https://fec-navbar.s3.us-east-2.amazonaws.com/search-dump/dagne+dover/6ecd629f-ec4c-4535-a2ff-f82590949759.jpeg"  },
-      { "imgOne" : "https://fec-navbar.s3.us-east-2.amazonaws.com/search-dump/dagne+dover/8f06468e-3725-4efe-a601-984492f5cf2a.jpeg",
-        "imgTwo" : "https://fec-navbar.s3.us-east-2.amazonaws.com/search-dump/dagne+dover/b72552c1-dde8-4eba-8684-4dc0e13167f7.jpeg"  }
+  {
+    "productName" : "burberry three",
+    "images" : [
+      { "imgUrl" : "https://fec-navbar.s3.us-east-2.amazonaws.com/search-dump/burberry/947c14d0-7056-432d-bc6f-d03b44f7e9c7.jpeg" },
+      { "imgUrl" : "https://fec-navbar.s3.us-east-2.amazonaws.com/search-dump/burberry/b9b2b24c-e570-4620-9baa-d1438489bd5a.jpeg" }
+    ],
+    "keywords": [
+      { "keyword": "burberry" }
     ]
   },
-  { 
-    "name": "dansko",
-    "images": [
-      { "imgOne" : "https://fec-navbar.s3.us-east-2.amazonaws.com/search-dump/dansko/b06a0f75-929d-40c2-a83d-4d58520e3d15.jpeg",
-        "imgTwo" : "https://fec-navbar.s3.us-east-2.amazonaws.com/search-dump/dansko/f98b5446-2c60-46ec-8064-2eb2d0e72380.jpeg"  },
-      { "imgOne" : "https://fec-navbar.s3.us-east-2.amazonaws.com/search-dump/dansko/59023de0-bdbe-481c-ad27-b1322efc4350.jpeg",
-        "imgTwo" : "https://fec-navbar.s3.us-east-2.amazonaws.com/search-dump/dansko/cbb2068b-85ad-4975-9e2f-edcaddff153f.jpeg"  },
-      { "imgOne" : "https://fec-navbar.s3.us-east-2.amazonaws.com/search-dump/dansko/01defbda-4c2b-48f4-a78b-51bae4a56340.jpeg",
-        "imgTwo" : "https://fec-navbar.s3.us-east-2.amazonaws.com/search-dump/dansko/06ccbcc4-32a4-4f10-97ef-862f91a77975.jpeg"  }
+  {
+    "productName" : "balenciaga one",
+    "images" : [
+      { "imgUrl" : "https://fec-navbar.s3.us-east-2.amazonaws.com/search-dump/balenciaga/44b843f0-fe3b-4fe5-8be0-434eee469333.jpeg" },
+      { "imgUrl" : "https://fec-navbar.s3.us-east-2.amazonaws.com/search-dump/balenciaga/f23e643a-b412-4153-8119-59792720a91b.jpeg" }
+    ],
+    "keywords": [
+      { "keyword": "balenciaga" }
     ]
-  }
+  },
+  {
+    "productName" : "balenciaga two",
+    "images" : [
+      { "imgUrl" : "https://fec-navbar.s3.us-east-2.amazonaws.com/search-dump/balenciaga/d5f772c3-d3b4-44fd-92f3-afbd26559768.jpeg" },
+      { "imgUrl" : "https://fec-navbar.s3.us-east-2.amazonaws.com/search-dump/balenciaga/730a3e32-c550-46e8-a607-3d9ac82fa65d.jpeg" }
+    ],
+    "keywords": [
+      { "keyword": "balenciaga" }
+    ]
+  },
+  {
+    "productName" : "balenciaga three",
+    "images" : [
+      { "imgUrl" : "https://fec-navbar.s3.us-east-2.amazonaws.com/search-dump/balenciaga/f841d103-5a80-4436-8d5c-d6bc4ca2735d.jpeg" },
+      { "imgUrl" : "https://fec-navbar.s3.us-east-2.amazonaws.com/search-dump/balenciaga/ef9ab8da-e4d5-4584-88ae-fed414533653.jpeg" }
+    ],
+    "keywords": [
+      { "keyword": "balenciaga" }
+    ]
+  },
+  {
+    "productName" : "birkenstock one",
+    "images" : [
+      { "imgUrl" : "https://fec-navbar.s3.us-east-2.amazonaws.com/search-dump/birkenstock/0f8cf4d4-f952-4d25-b97a-81f8840fef40.jpeg" },
+      { "imgUrl" : "https://fec-navbar.s3.us-east-2.amazonaws.com/search-dump/birkenstock/a5cb24a4-d632-4216-b807-2d3873bf899a.jpeg" }
+    ],
+    "keywords": [
+      { "keyword": "birkenstock" }
+    ]
+  },
+  {
+    "productName" : "birkenstock two",
+    "images" : [
+      { "imgUrl" : "https://fec-navbar.s3.us-east-2.amazonaws.com/search-dump/birkenstock/3b3b91f0-6373-4a78-9f0d-d64ff589be46.jpeg" },
+      { "imgUrl" : "https://fec-navbar.s3.us-east-2.amazonaws.com/search-dump/birkenstock/8323b204-51d8-4c2b-9b3c-7c086db1ae7f.jpeg" }
+    ],
+    "keywords": [
+      { "keyword": "birkenstock" }
+    ]
+  },
+  {
+    "productName" : "birkenstock three",
+    "images" : [
+      { "imgUrl" : "https://fec-navbar.s3.us-east-2.amazonaws.com/search-dump/birkenstock/26d6c4a0-ef55-4164-bd73-4754ca3308b5.jpeg" },
+      { "imgUrl" : "https://fec-navbar.s3.us-east-2.amazonaws.com/search-dump/birkenstock/c663bec9-3239-4137-952e-3794be70a82a.jpeg" }
+    ],
+    "keywords": [
+      { "keyword": "birkenstock" }
+    ]
+  },
+  {
+    "productName" : "backpacks one",
+    "images" : [
+      { "imgUrl" : "https://fec-navbar.s3.us-east-2.amazonaws.com/search-dump/backpacks/387b57fe-12c0-4113-b12b-26f8b2569def.jpeg" },
+      { "imgUrl" : "https://fec-navbar.s3.us-east-2.amazonaws.com/search-dump/backpacks/2505b1ba-448b-486c-a7c5-2ff4474017af.jpeg" }
+    ],
+    "keywords": [
+      { "keyword": "backpacks" }
+    ]
+  },
+  {
+    "productName" : "backpacks two",
+    "images" : [
+      { "imgUrl" : "https://fec-navbar.s3.us-east-2.amazonaws.com/search-dump/backpacks/d56b6223-17a7-4c87-acc1-8966e7c19ce3.jpeg" },
+      { "imgUrl" : "https://fec-navbar.s3.us-east-2.amazonaws.com/search-dump/backpacks/eba9fa79-aa21-45c3-b233-7562bd3e1a5a.jpeg" }
+    ],
+    "keywords": [
+      { "keyword": "backpacks" }
+    ]
+  },
+  {
+    "productName" : "backpacks three",
+    "images" : [
+      { "imgUrl" : "https://fec-navbar.s3.us-east-2.amazonaws.com/search-dump/backpacks/d458248b-a2a6-4afd-8a14-2a584c720b3d.jpeg" },
+      { "imgUrl" : "https://fec-navbar.s3.us-east-2.amazonaws.com/search-dump/backpacks/2c017dca-17e5-4f17-af05-f8c1d3971d7c.jpeg" }
+    ],
+    "keywords": [
+      { "keyword": "backpacks" }
+    ]
+  },
+  {
+    "productName" : "christian louboutin one",
+    "images" : [
+      { "imgUrl" : "https://fec-navbar.s3.us-east-2.amazonaws.com/search-dump/christian+louboutin/97211ca3-9faa-4e48-a394-b89d3e3df3c5.jpeg" },
+      { "imgUrl" : "https://fec-navbar.s3.us-east-2.amazonaws.com/search-dump/christian+louboutin/e3295c11-b630-41e8-8906-818a45b127ae.jpeg" }
+    ],
+    "keywords": [
+      { "keyword": "christian louboutin" }
+    ]
+  },
+  {
+    "productName" : "christian louboutin two",
+    "images" : [
+      { "imgUrl" : "https://fec-navbar.s3.us-east-2.amazonaws.com/search-dump/christian+louboutin/fd8d0eac-3cca-4262-bcaf-0fb58e94ef4d.jpeg" },
+      { "imgUrl" : "https://fec-navbar.s3.us-east-2.amazonaws.com/search-dump/christian+louboutin/583af573-263b-4f03-b5fe-e790e6a207d2.jpeg" }
+    ],
+    "keywords": [
+      { "keyword": "christian louboutin" }
+    ]
+  },
+  {
+    "productName" : "christian louboutin three",
+    "images" : [
+      { "imgUrl" : "https://fec-navbar.s3.us-east-2.amazonaws.com/search-dump/christian+louboutin/64e67a24-b4e2-43b9-a5e6-1d19132f16db.jpeg" },
+      { "imgUrl" : "https://fec-navbar.s3.us-east-2.amazonaws.com/search-dump/christian+louboutin/0c9f3af8-cf7b-4af2-8baa-1a4009c495c1.jpeg" }
+    ],
+    "keywords": [
+      { "keyword": "christian louboutin" }
+    ]
+  },
+  {
+    "productName" : "comme des garcons one",
+    "images" : [
+      { "imgUrl" : "https://fec-navbar.s3.us-east-2.amazonaws.com/search-dump/comme+des+garcons/3f2c16fa-602f-465a-9d04-32bfdc6009a5.jpeg" },
+      { "imgUrl" : "https://fec-navbar.s3.us-east-2.amazonaws.com/search-dump/comme+des+garcons/43f4a141-0a3a-433e-b0d5-5e3bca1e8a01.jpeg" }
+    ],
+    "keywords": [
+      { "keyword": "comme des garcons" }
+    ]
+  },
+  {
+    "productName" : "comme des garcons two",
+    "images" : [
+      { "imgUrl" : "https://fec-navbar.s3.us-east-2.amazonaws.com/search-dump/comme+des+garcons/b4032d55-8afe-4372-8e5c-d1cf914c9441.jpeg" },
+      { "imgUrl" : "https://fec-navbar.s3.us-east-2.amazonaws.com/search-dump/comme+des+garcons/3f4eebb5-6068-4715-81d3-e494380e975d.jpeg" }
+    ],
+    "keywords": [
+      { "keyword": "comme des garcons" }
+    ]
+  },
+  {
+    "productName" : "comme des garcons three",
+    "images" : [
+      { "imgUrl" : "https://fec-navbar.s3.us-east-2.amazonaws.com/search-dump/comme+des+garcons/c772300e-1bcb-423d-8f0c-d85cb5ab154a.jpeg" },
+      { "imgUrl" : "https://fec-navbar.s3.us-east-2.amazonaws.com/search-dump/comme+des+garcons/66683352-a4f0-417c-be6c-c0d07358ae7d.jpeg" }
+    ],
+    "keywords": [
+      { "keyword": "comme des garcons" }
+    ]
+  },
+  {
+    "productName" : "clinique one",
+    "images" : [
+      { "imgUrl" : "https://fec-navbar.s3.us-east-2.amazonaws.com/search-dump/clinique/f5f70fff-589b-4ee5-b614-df6e53e585b5.jpeg" },
+      { "imgUrl" : "https://fec-navbar.s3.us-east-2.amazonaws.com/search-dump/clinique/ae4feabd-4179-45a3-a9c6-5251b4024655.jpeg" }
+    ],
+    "keywords": [
+      { "keyword": "clinique" }
+    ]
+  },
+  {
+    "productName" : "clinique two",
+    "images" : [
+      { "imgUrl" : "https://fec-navbar.s3.us-east-2.amazonaws.com/search-dump/clinique/74d1da0a-ab2a-479b-909e-b6c42e489d65.jpeg" },
+      { "imgUrl" : "https://fec-navbar.s3.us-east-2.amazonaws.com/search-dump/clinique/e9101eff-70cf-43f9-9c5b-02ca72a3dffa.jpeg" }
+    ],
+    "keywords": [
+      { "keyword": "clinique" }
+    ]
+  },
+  {
+    "productName" : "clinique three",
+    "images" : [
+      { "imgUrl" : "https://fec-navbar.s3.us-east-2.amazonaws.com/search-dump/clinique/8b99dbe5-87be-4e5b-9405-469ddf0ce728.jpeg" },
+      { "imgUrl" : "https://fec-navbar.s3.us-east-2.amazonaws.com/search-dump/clinique/44f6e00f-0fef-4ec7-8c9c-599d0b751517.jpeg" }
+    ],
+    "keywords": [
+      { "keyword": "clinique" }
+    ]
+  },
+  {
+    "productName" : "chanel one",
+    "images" : [
+      { "imgUrl" : "https://fec-navbar.s3.us-east-2.amazonaws.com/search-dump/chanel/ee48f747-e8fc-472f-b6bd-85bca0554e17.jpeg" },
+      { "imgUrl" : "https://fec-navbar.s3.us-east-2.amazonaws.com/search-dump/chanel/be07e39a-305f-49c9-8698-d11800a9b520.jpeg" }
+    ],
+    "keywords": [
+      { "keyword": "chanel" }
+    ]
+  },
+  {
+    "productName" : "chanel two",
+    "images" : [
+      { "imgUrl" : "https://fec-navbar.s3.us-east-2.amazonaws.com/search-dump/chanel/34dcf010-5db4-4184-a163-36cd96786729.jpeg" },
+      { "imgUrl" : "https://fec-navbar.s3.us-east-2.amazonaws.com/search-dump/chanel/e4b2239a-7448-4beb-bd1a-74bfe6c22f78.jpeg" }
+    ],
+    "keywords": [
+      { "keyword": "chanel" }
+    ]
+  },
+  {
+    "productName" : "chanel three",
+    "images" : [
+      { "imgUrl" : "https://fec-navbar.s3.us-east-2.amazonaws.com/search-dump/chanel/156fd377-9954-4402-92e8-de55eb1a7be9.jpeg" },
+      { "imgUrl" : "https://fec-navbar.s3.us-east-2.amazonaws.com/search-dump/chanel/fe2ac94c-b759-4641-b6dc-b2fb8f9ae7d4.jpeg" }
+    ],
+    "keywords": [
+      { "keyword": "chanel" }
+    ]
+  },
+  {
+    "productName" : "dresses one",
+    "images" : [
+      { "imgUrl" : "https://fec-navbar.s3.us-east-2.amazonaws.com/search-dump/dresses/5df19a49-ac10-4948-9eff-bc014bfb3a25.jpeg" },
+      { "imgUrl" : "https://fec-navbar.s3.us-east-2.amazonaws.com/search-dump/dresses/45b7a35a-e188-4ee5-8dd6-851627e66317.jpeg" }
+    ],
+    "keywords": [
+      { "keyword": "dresses" }
+    ]
+  },
+  {
+    "productName" : "dresses two",
+    "images" : [
+      { "imgUrl" : "https://fec-navbar.s3.us-east-2.amazonaws.com/search-dump/dresses/92c408d7-ce03-4a7a-bbad-456edbe9e87d.jpeg" },
+      { "imgUrl" : "https://fec-navbar.s3.us-east-2.amazonaws.com/search-dump/dresses/6db46e92-98f9-433a-b61b-2dc7ddc07b36.jpeg" }
+    ],
+    "keywords": [
+      { "keyword": "dresses" }
+    ]
+  },
+  {
+    "productName" : "dresses three",
+    "images" : [
+      { "imgUrl" : "https://fec-navbar.s3.us-east-2.amazonaws.com/search-dump/dresses/ce2eb36b-5870-4286-adf9-30f24e563bfc.jpeg" },
+      { "imgUrl" : "https://fec-navbar.s3.us-east-2.amazonaws.com/search-dump/dresses/759f9467-c57e-4656-b1e2-5476d3f56c60.jpeg" }
+    ],
+    "keywords": [
+      { "keyword": "dresses" }
+    ]
+  },
+  {
+    "productName" : "dior one",
+    "images" : [
+      { "imgUrl" : "https://fec-navbar.s3.us-east-2.amazonaws.com/search-dump/dior/e2d552b3-79d3-48a2-9ebe-4362391f9677.jpeg" },
+      { "imgUrl" : "https://fec-navbar.s3.us-east-2.amazonaws.com/search-dump/dior/26d73929-01fb-4654-a5b1-1a3683a68ac6.jpeg" }
+    ],
+    "keywords": [
+      { "keyword": "dior" }
+    ]
+  },
+  {
+    "productName" : "dior two",
+    "images" : [
+      { "imgUrl" : "https://fec-navbar.s3.us-east-2.amazonaws.com/search-dump/dior/fcc5cc21-dd48-4920-b822-f38fc13454cf.jpeg" },
+      { "imgUrl" : "https://fec-navbar.s3.us-east-2.amazonaws.com/search-dump/dior/775a0736-21c3-4da9-a85d-38f693672194.jpeg" }
+    ],
+    "keywords": [
+      { "keyword": "dior" }
+    ]
+  },
+  {
+    "productName" : "dior three",
+    "images" : [
+      { "imgUrl" : "https://fec-navbar.s3.us-east-2.amazonaws.com/search-dump/dior/080ebd17-be24-44eb-a5a6-4d70e1a393e2.jpeg" },
+      { "imgUrl" : "https://fec-navbar.s3.us-east-2.amazonaws.com/search-dump/dior/c49a70a7-f49d-4cd2-bf73-bc86bfb155f1.jpeg" }
+    ],
+    "keywords": [
+      { "keyword": "dior" }
+    ]
+  },
+  {
+    "productName" : "dagne dover one",
+    "images" : [
+      { "imgUrl" : "https://fec-navbar.s3.us-east-2.amazonaws.com/search-dump/dagne+dover/5bb9d748-dc0b-4397-9ab3-245186764909.jpeg" },
+      { "imgUrl" : "https://fec-navbar.s3.us-east-2.amazonaws.com/search-dump/dagne+dover/e9ff8055-8d57-42a3-833c-c43b523810e8.jpeg" }
+    ],
+    "keywords": [
+      { "keyword": "dagne dover" }
+    ]
+  },
+  {
+    "productName" : "dagne dover two",
+    "images" : [
+      { "imgUrl" : "https://fec-navbar.s3.us-east-2.amazonaws.com/search-dump/dagne+dover/b4c8dbd5-3b41-4da3-bdd7-74e5f88ec5cf.jpeg" },
+      { "imgUrl" : "https://fec-navbar.s3.us-east-2.amazonaws.com/search-dump/dagne+dover/6ecd629f-ec4c-4535-a2ff-f82590949759.jpeg" }
+    ],
+    "keywords": [
+      { "keyword": "dagne dover" }
+    ]
+  },
+  {
+    "productName" : "dagne dover three",
+    "images" : [
+      { "imgUrl" : "https://fec-navbar.s3.us-east-2.amazonaws.com/search-dump/dagne+dover/8f06468e-3725-4efe-a601-984492f5cf2a.jpeg" },
+      { "imgUrl" : "https://fec-navbar.s3.us-east-2.amazonaws.com/search-dump/dagne+dover/b72552c1-dde8-4eba-8684-4dc0e13167f7.jpeg" }
+    ],
+    "keywords": [
+      { "keyword": "dagne dover" }
+    ]
+  },
+  {
+    "productName" : "dansko one",
+    "images" : [
+      { "imgUrl" : "https://fec-navbar.s3.us-east-2.amazonaws.com/search-dump/dansko/b06a0f75-929d-40c2-a83d-4d58520e3d15.jpeg" },
+      { "imgUrl" : "https://fec-navbar.s3.us-east-2.amazonaws.com/search-dump/dansko/f98b5446-2c60-46ec-8064-2eb2d0e72380.jpeg" }
+    ],
+    "keywords": [
+      { "keyword": "dansko" }
+    ]
+  },
+  {
+    "productName" : "dansko two",
+    "images" : [
+      { "imgUrl" : "https://fec-navbar.s3.us-east-2.amazonaws.com/search-dump/dansko/59023de0-bdbe-481c-ad27-b1322efc4350.jpeg" },
+      { "imgUrl" : "https://fec-navbar.s3.us-east-2.amazonaws.com/search-dump/dansko/cbb2068b-85ad-4975-9e2f-edcaddff153f.jpeg" }
+    ],
+    "keywords": [
+      { "keyword": "dansko" }
+    ]
+  },
+  {
+    "productName" : "dansko three",
+    "images" : [
+      { "imgUrl" : "https://fec-navbar.s3.us-east-2.amazonaws.com/search-dump/dansko/01defbda-4c2b-48f4-a78b-51bae4a56340.jpeg" },
+      { "imgUrl" : "https://fec-navbar.s3.us-east-2.amazonaws.com/search-dump/dansko/06ccbcc4-32a4-4f10-97ef-862f91a77975.jpeg" }
+    ],
+    "keywords": [
+      { "keyword": "dansko" }
+    ]
+  },
+  {
+    "productName" : "dansko one",
+    "images" : [
+      { "imgUrl" : "https://fec-navbar.s3.us-east-2.amazonaws.com/search-dump/dansko/b06a0f75-929d-40c2-a83d-4d58520e3d15.jpeg" },
+      { "imgUrl" : "https://fec-navbar.s3.us-east-2.amazonaws.com/search-dump/dansko/f98b5446-2c60-46ec-8064-2eb2d0e72380.jpeg" }
+    ],
+    "keywords": [
+      { "keyword": "dansko" }
+    ]
+  },
+  {
+    "productName" : "dansko two",
+    "images" : [
+      { "imgUrl" : "https://fec-navbar.s3.us-east-2.amazonaws.com/search-dump/dansko/59023de0-bdbe-481c-ad27-b1322efc4350.jpeg" },
+      { "imgUrl" : "https://fec-navbar.s3.us-east-2.amazonaws.com/search-dump/dansko/cbb2068b-85ad-4975-9e2f-edcaddff153f.jpeg" }
+    ],
+    "keywords": [
+      { "keyword": "dansko" }
+    ]
+  },
+  {
+    "productName" : "dansko three",
+    "images" : [
+      { "imgUrl" : "https://fec-navbar.s3.us-east-2.amazonaws.com/search-dump/dansko/01defbda-4c2b-48f4-a78b-51bae4a56340.jpeg" },
+      { "imgUrl" : "https://fec-navbar.s3.us-east-2.amazonaws.com/search-dump/dansko/06ccbcc4-32a4-4f10-97ef-862f91a77975.jpeg" }
+    ],
+    "keywords": [
+      { "keyword": "dansko" }
+    ]
+  },
+  
 ]

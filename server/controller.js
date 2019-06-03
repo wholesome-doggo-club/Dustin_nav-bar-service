@@ -10,14 +10,7 @@ module.exports = {
       .catch(err => res.status(404).send(err))
   },
 
-  getCategories: (req, res) => {
-    const { _id } = req.params
-
-    helper.getCategories(_id)
-      .then(data => res.status(200).send(data))
-      .catch(err => res.status(404).send(err))
-  },
-
+  /** TODO: restructure this to use Product collection **/
   getSearchResults: (req, res) => {
     const { term } = req.params
 

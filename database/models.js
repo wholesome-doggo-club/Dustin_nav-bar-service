@@ -19,22 +19,25 @@ const departmentSchema = new mongoose.Schema({
 
 const Department = mongoose.model('departments', departmentSchema);
 
-/* Search items */
+/* Product Search items */
+
+const keywordSchema = new mongoose.Schema({
+  keyword: String
+})
 
 const imageSchema = new mongoose.Schema({
-  // productName: String,
-  imgOne: String,
-  imgTwo: String
+  imgUrl: String
 })
 
-const searchSchema = new mongoose.Schema({
-  name: String,
-  images: [imageSchema]
+const productSchema = new mongoose.Schema({
+  productName: String,
+  images: [imageSchema],
+  keywords: [keywordSchema]
 })
 
-const Search = mongoose.model('searches', searchSchema)
+const Product = mongoose.model('products', productSchema)
 
 module.exports = {
   Department,
-  Search
+  Product
 }
