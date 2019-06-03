@@ -167,7 +167,7 @@ class NavBar extends React.Component {
 
               {/* collective search results conditional render */}
               <ul className={style.searchResults}>
-                {this.state.results.map((result, index) => <SearchResults key={index} index={index} result={result} handleMouseOver={this.handleMouseOver} />)}
+                {this.state.results.map((result, index) => <SearchResults key={index} index={index} result={result} search={this.state.search} handleMouseOver={this.handleMouseOver} />)}
               </ul>
 
               {/* additional assets i.e. images render */}
@@ -176,17 +176,18 @@ class NavBar extends React.Component {
                 <div>
                   <div className={style.featuredResult}>
                     <span>
-                      <strong>Featured results for "{this.state.results[this.state.resultHoverIdx].name}"</strong>
+                      <strong>Featured results for "{this.state.results[this.state.resultHoverIdx].keyword}"</strong>
                     </span>
                   </div>
                   <div className={style.imgResultDiv}>
                     <ul>
                       {
-                        this.state.results[this.state.resultHoverIdx].images.map((imageElement, index) =>
+                        this.state.results[this.state.resultHoverIdx].products.map((product, index) =>
                         <li key={index} onMouseEnter={() => this.handleMouseOver(index)} onMouseOut={() => this.handleMouseOut(index)}>
                           {
-                            this.state[index] ? <img className={style.imgResult} src={imageElement.imgTwo} /> 
-                            : <img className={style.imgResult} src={imageElement.imgOne} />}
+                            (this.state[index] && product.images.length > 1) ? <img className={style.imgResult} src={product.images[1].imageUrl} /> 
+                            : <img className={style.imgResult} src={product.images[0].imageUrl} />
+                          }
                         </li>)
                       }
                     </ul>

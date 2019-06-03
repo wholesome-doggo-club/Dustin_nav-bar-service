@@ -6,7 +6,7 @@ router
   .get(controller.getDepartments)
 
 router
-  .route('/search/:term')
+  .route('/search/:query')
   .get(controller.getSearchResults)
 
 module.exports = router;

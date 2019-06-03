@@ -10,11 +10,10 @@ module.exports = {
       .catch(err => res.status(404).send(err))
   },
 
-  /** TODO: restructure this to use Product collection **/
   getSearchResults: (req, res) => {
-    const { term } = req.params
+    const { query } = req.params
 
-    helper.getSearchResults(term)
+    helper.getSearchResults(query)
       .limit(5)
       .then(data => res.status(200).send(data))
       .catch(err => res.status(404).send(err))

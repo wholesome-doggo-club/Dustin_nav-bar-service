@@ -89,6 +89,10 @@
   padding: 0;
 }
 
+.searchResults strong {
+  font-family: 'Brandon Text Bold';
+}
+
 .searchResults li {
   margin: 10px 0 10px 0;
 }
