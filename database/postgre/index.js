@@ -1,7 +1,7 @@
 const Sequelize = require('sequelize');
-const sequelize = new Sequelize('navdata', 'root', 'password', {
+const sequelize = new Sequelize('navdata', 'dustintktran', 'password', {
   host: 'localhost',
-  dialect: 'mysql'
+  dialect: 'postgres'
 })
 
 sequelize.authenticate()
