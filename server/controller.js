@@ -1,5 +1,7 @@
 // const helper = require('../database/helpers')
-const benchmarkFunction = require('../database/postgre/benchmark.js');
+const requestPG = require('../database/postgre/benchmarkNoORM.js');
+// const requestPG = require('../database/postgre/benchmark.js');
+const requestMongo = require('../database/mongo/benchmark.js')
 
 // connect server to DB+models
 require('../database/postgre/models.js')
@@ -19,8 +21,11 @@ module.exports = {
   //     .then(data => res.status(200).send(data))
   //     .catch(err => res.status(404).send(err))
   // },
-  benchmark: (req, res) => {
+  benchmarkPG: (req, res) => {
     // res.send(query);
-    benchmarkFunction((data) => res.send(data))
+    requestPG((data) => res.send(data))
+  },
+  benchmarkMongo: (req, res) => {
+    requestMongo((data) => res.send(data))
   }
 }

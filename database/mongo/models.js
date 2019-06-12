@@ -11,13 +11,13 @@ const imageSchema = new mongoose.Schema({
 })
 
 const productSchema = new mongoose.Schema({
-  productName: String,
+  productName: { type: String, index: true },
   images: [imageSchema]
 })
 
 const keywordSchema = new mongoose.Schema({
   keyword: String,
-  products: [productSchema]
+  products: {type: [productSchema], index: true }
 })
 
 const Keyword = mongoose.model('keywords', keywordSchema)

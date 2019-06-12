@@ -6,7 +6,7 @@ const sequelize = new Sequelize('navdata', 'dustintktran', 'password', {
 
 sequelize.authenticate()
   .then(() => {
-    console.log('Connection has been established successfully.');
+    console.log('Connection to Postgres has been established successfully.');
   })
   .catch(err => {
     console.error('Unable to connect to the database:', err);

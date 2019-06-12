@@ -1,0 +1,207 @@
+{
+  "intermediate": [
+    {
+      "timestamp": "2019-06-11T02:04:19.816Z",
+      "scenariosCreated": 99,
+      "scenariosCompleted": 99,
+      "requestsCompleted": 99,
+      "rps": {
+        "mean": 9.9,
+        "count": 99
+      },
+      "latency": {
+        "min": 2.9,
+        "max": 13.8,
+        "median": 4.72,
+        "p95": 7.45,
+        "p99": 13.8
+      },
+      "scenarioDuration": {
+        "min": 3.49,
+        "max": 21,
+        "median": 5.37,
+        "p95": 9.39,
+        "p99": 21
+      },
+      "errors": {},
+      "codes": {
+        "200": 99
+      },
+      "matches": 0
+    },
+    {
+      "timestamp": "2019-06-11T02:04:29.815Z",
+      "scenariosCreated": 100,
+      "scenariosCompleted": 100,
+      "requestsCompleted": 100,
+      "rps": {
+        "mean": 10,
+        "count": 100
+      },
+      "latency": {
+        "min": 3,
+        "max": 7.18,
+        "median": 4.23,
+        "p95": 5.79,
+        "p99": 7.17
+      },
+      "scenarioDuration": {
+        "min": 3.58,
+        "max": 7.85,
+        "median": 4.88,
+        "p95": 6.51,
+        "p99": 7.85
+      },
+      "errors": {},
+      "codes": {
+        "200": 100
+      },
+      "matches": 0
+    },
+    {
+      "timestamp": "2019-06-11T02:04:39.815Z",
+      "scenariosCreated": 100,
+      "scenariosCompleted": 100,
+      "requestsCompleted": 100,
+      "rps": {
+        "mean": 10,
+        "count": 100
+      },
+      "latency": {
+        "min": 2.25,
+        "max": 7.85,
+        "median": 4.12,
+        "p95": 6.01,
+        "p99": 7.83
+      },
+      "scenarioDuration": {
+        "min": 2.82,
+        "max": 8.47,
+        "median": 4.71,
+        "p95": 6.66,
+        "p99": 8.45
+      },
+      "errors": {},
+      "codes": {
+        "200": 100
+      },
+      "matches": 0
+    },
+    {
+      "timestamp": "2019-06-11T02:04:49.815Z",
+      "scenariosCreated": 100,
+      "scenariosCompleted": 100,
+      "requestsCompleted": 100,
+      "rps": {
+        "mean": 10,
+        "count": 100
+      },
+      "latency": {
+        "min": 2.58,
+        "max": 6.62,
+        "median": 4.13,
+        "p95": 5.48,
+        "p99": 6.62
+      },
+      "scenarioDuration": {
+        "min": 3.16,
+        "max": 7.2,
+        "median": 4.81,
+        "p95": 6.06,
+        "p99": 7.2
+      },
+      "errors": {},
+      "codes": {
+        "200": 100
+      },
+      "matches": 0
+    },
+    {
+      "timestamp": "2019-06-11T02:04:59.815Z",
+      "scenariosCreated": 100,
+      "scenariosCompleted": 100,
+      "requestsCompleted": 100,
+      "rps": {
+        "mean": 10,
+        "count": 100
+      },
+      "latency": {
+        "min": 2.25,
+        "max": 8.25,
+        "median": 3.97,
+        "p95": 5.65,
+        "p99": 8.25
+      },
+      "scenarioDuration": {
+        "min": 2.8,
+        "max": 8.91,
+        "median": 4.66,
+        "p95": 6.29,
+        "p99": 8.91
+      },
+      "errors": {},
+      "codes": {
+        "200": 100
+      },
+      "matches": 0
+    },
+    {
+      "timestamp": "2019-06-11T02:05:09.815Z",
+      "scenariosCreated": 100,
+      "scenariosCompleted": 100,
+      "requestsCompleted": 100,
+      "rps": {
+        "mean": 10,
+        "count": 100
+      },
+      "latency": {
+        "min": 2.78,
+        "max": 5.53,
+        "median": 3.98,
+        "p95": 5.12,
+        "p99": 5.53
+      },
+      "scenarioDuration": {
+        "min": 3.35,
+        "max": 7.27,
+        "median": 4.61,
+        "p95": 6.03,
+        "p99": 7.27
+      },
+      "errors": {},
+      "codes": {
+        "200": 100
+      },
+      "matches": 0
+    }
+  ],
+  "aggregate": {
+    "timestamp": "2019-06-11T02:05:10.322Z",
+    "scenariosCreated": 600,
+    "scenariosCompleted": 600,
+    "requestsCompleted": 600,
+    "rps": {
+      "mean": 9.92,
+      "count": 600
+    },
+    "latency": {
+      "min": 2.25,
+      "max": 13.8,
+      "median": 4.22,
+      "p95": 5.97,
+      "p99": 7.84
+    },
+    "scenarioDuration": {
+      "min": 2.8,
+      "max": 21,
+      "median": 4.88,
+      "p95": 6.76,
+      "p99": 8.98
+    },
+    "errors": {},
+    "codes": {
+      "200": 600
+    },
+    "matches": 0
+  }
+}

@@ -10,5 +10,8 @@ const controller = require('./controller');
 //   .get(controller.getSearchResults)
 
 router  
-  .route('/benchmark').get(controller.benchmark)
+  .route('/benchmarkPG').get(controller.benchmarkPG)
+
+router.route('/benchmarkMongo').get(controller.benchmarkMongo)
+
 module.exports = router;

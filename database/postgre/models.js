@@ -15,7 +15,14 @@ Product.init({
   category: Sequelize.STRING,
   images: Sequelize.STRING
 }, {
-  sequelize, modelName: 'product', timestamps: false
+  sequelize, modelName: 'product', timestamps: false,  
+  indexes: [
+    {
+      name: 'product_index',
+      method: 'BTREE',
+      fields: ['product_name']
+    }
+  ],
 })
 
 
