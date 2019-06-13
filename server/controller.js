@@ -1,5 +1,5 @@
 // const helper = require('../database/helpers')
-const requestPG = require('../database/postgre/benchmarkNoORM.js');
+const requestPG = require('../database/postgre/benchmark.js');
 // const requestPG = require('../database/postgre/benchmark.js');
 const requestMongo = require('../database/mongo/benchmark.js')
 

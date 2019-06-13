@@ -1,6 +1,6 @@
 const Sequelize = require('sequelize');
 const sequelize = new Sequelize('navdata', 'dustintktran', 'password', {
-  host: 'localhost',
+  host: 'ec2-52-53-186-193.us-west-1.compute.amazonaws.com',
   dialect: 'postgres'
 })
 
@@ -13,3 +13,4 @@ sequelize.authenticate()
   });
 
 module.exports = sequelize;
+//ec2-13-52-75-147.us-west-1.compute.amazonaws.com
