@@ -19,3 +19,9 @@ To run this service:
     copy keywords(id, keyword) from '/Users/dustintktran/Desktop/SDC/Dustin_nav-bar-service/database/postgre/keywords.csv' delimiter ',' csv;
 
     copy products(product_name, category, images, "keywordId") from '/Users/dustintktran/Desktop/SDC/Dustin_nav-bar-service/database/postgre/products.csv' delimiter ',' csv;
+
+     
+     
+     copy keywords(id, keyword) from '/home/ubuntu/keywords.csv' delimiter ',' csv;
+
+     copy products(product_name, category, images, "keywordId") from '/home/ubuntu/products.csv' delimiter ',' csv;

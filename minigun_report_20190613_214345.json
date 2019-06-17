@@ -1,0 +1,120 @@
+{
+  "intermediate": [
+    {
+      "timestamp": "2019-06-13T21:43:55.958Z",
+      "scenariosCreated": 99,
+      "scenariosCompleted": 99,
+      "requestsCompleted": 99,
+      "rps": {
+        "mean": 9.9,
+        "count": 99
+      },
+      "latency": {
+        "min": 21.44,
+        "max": 130.23,
+        "median": 25.16,
+        "p95": 38.27,
+        "p99": 130.23
+      },
+      "scenarioDuration": {
+        "min": 22.38,
+        "max": 141.85,
+        "median": 26.02,
+        "p95": 39.12,
+        "p99": 141.85
+      },
+      "errors": {},
+      "codes": {
+        "200": 99
+      },
+      "matches": 0
+    },
+    {
+      "timestamp": "2019-06-13T21:44:05.957Z",
+      "scenariosCreated": 100,
+      "scenariosCompleted": 100,
+      "requestsCompleted": 100,
+      "rps": {
+        "mean": 10,
+        "count": 100
+      },
+      "latency": {
+        "min": 21.7,
+        "max": 72.23,
+        "median": 26.26,
+        "p95": 38.97,
+        "p99": 72
+      },
+      "scenarioDuration": {
+        "min": 22.46,
+        "max": 73.02,
+        "median": 27.06,
+        "p95": 39.72,
+        "p99": 72.79
+      },
+      "errors": {},
+      "codes": {
+        "200": 100
+      },
+      "matches": 0
+    },
+    {
+      "timestamp": "2019-06-13T21:44:15.957Z",
+      "scenariosCreated": 100,
+      "scenariosCompleted": 100,
+      "requestsCompleted": 100,
+      "rps": {
+        "mean": 10,
+        "count": 100
+      },
+      "latency": {
+        "min": 22.14,
+        "max": 54.36,
+        "median": 25.34,
+        "p95": 34.83,
+        "p99": 54.27
+      },
+      "scenarioDuration": {
+        "min": 22.86,
+        "max": 55.16,
+        "median": 26.19,
+        "p95": 35.59,
+        "p99": 55.06
+      },
+      "errors": {},
+      "codes": {
+        "200": 100
+      },
+      "matches": 0
+    }
+  ],
+  "aggregate": {
+    "timestamp": "2019-06-13T21:44:16.465Z",
+    "scenariosCreated": 300,
+    "scenariosCompleted": 300,
+    "requestsCompleted": 300,
+    "rps": {
+      "mean": 9.83,
+      "count": 300
+    },
+    "latency": {
+      "min": 21.44,
+      "max": 130.23,
+      "median": 25.57,
+      "p95": 37.84,
+      "p99": 72.05
+    },
+    "scenarioDuration": {
+      "min": 22.38,
+      "max": 141.85,
+      "median": 26.38,
+      "p95": 38.58,
+      "p99": 72.85
+    },
+    "errors": {},
+    "codes": {
+      "200": 300
+    },
+    "matches": 0
+  }
+}
