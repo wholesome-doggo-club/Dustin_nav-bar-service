@@ -7,7 +7,7 @@ const first = ["Angela''s", "Calvin''s", "Dustin''s", "Gaby''s", "James''", "Wen
   "Viv''s", "Semira''s", "Eva''s", "Eti''s", "Billy''s"];
 
 const singleRequest = (callback) => {
-  console.log('inside single request')
+//  console.log('inside single request')
   let product = first[randomInt(0, first.length - 1)] + ' ' + middle[randomInt(0, middle.length - 1)] + ' ' + end[randomInt(0, end.length - 1)] + ' ' + products[randomInt(0, products.length - 1)];
   // console.log(product)
   pool.query(`SELECT * FROM "products" AS "product" WHERE "product_name" = '${product}' LIMIT 1;`, (err, res) => {

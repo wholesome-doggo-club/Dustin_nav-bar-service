@@ -12,6 +12,6 @@ const controller = require('./controller');
 router  
   .route('/benchmarkPG').get(controller.benchmarkPG)
 
-router.route('/benchmarkMongo').get(controller.benchmarkMongo)
+//router.route('/benchmarkMongo').get(controller.benchmarkMongo)
 
 module.exports = router;

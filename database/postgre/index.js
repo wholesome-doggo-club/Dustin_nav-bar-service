@@ -1,6 +1,6 @@
 const Sequelize = require('sequelize');
 const sequelize = new Sequelize('navdata', 'dustintktran', 'password', {
-  host: 'ec2-52-53-186-193.us-west-1.compute.amazonaws.com',
+  host: 'ec2-52-53-164-138.us-west-1.compute.amazonaws.com',
   dialect: 'postgres'
 })
 
